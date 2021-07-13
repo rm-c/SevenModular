@@ -20,5 +20,16 @@
   },
   "swift_versions": "5.0",
   "source_files": "SevenModular/Classes/**/*.{swift}",
+  "ios": {
+    "vendored_frameworks": "**/**/UTESmartBandApi.framework"
+  },
+  "dependencies": {
+    "WCDB.swift": [
+      "~> 1.0.8.2"
+    ],
+    "ObjectMapper": [
+      "~> 4.2.0"
+    ]
+  },
   "swift_version": "5.0"
 }

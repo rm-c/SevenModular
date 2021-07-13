@@ -1,15 +1,35 @@
 PODS:
-  - SevenModular (0.1.0)
+  - ObjectMapper (4.2.0)
+  - SevenModular (0.1.0):
+    - ObjectMapper (~> 4.2.0)
+    - WCDB.swift (~> 1.0.8.2)
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDB.swift (1.0.8.2):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
 
 DEPENDENCIES:
   - SevenModular (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - ObjectMapper
+    - SQLiteRepairKit
+    - WCDB.swift
+    - WCDBOptimizedSQLCipher
 
 EXTERNAL SOURCES:
   SevenModular:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SevenModular: d0349d7e048db646292a4653913cb4507f41d02c
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SevenModular: 2dc637328ff0d0007858781535f76a10fd2a5630
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
 
 PODFILE CHECKSUM: 06f6d973be347422acf31dc0c51955c08d21f4b5
 
