@@ -1,0 +1,6 @@
+framework module Pods_SevenModular_Tests {
+  umbrella header "Pods-SevenModular_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

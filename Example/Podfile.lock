@@ -1,0 +1,16 @@
+PODS:
+  - SevenModular (0.1.0)
+
+DEPENDENCIES:
+  - SevenModular (from `../`)
+
+EXTERNAL SOURCES:
+  SevenModular:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SevenModular: d0349d7e048db646292a4653913cb4507f41d02c
+
+PODFILE CHECKSUM: 06f6d973be347422acf31dc0c51955c08d21f4b5
+
+COCOAPODS: 1.10.1

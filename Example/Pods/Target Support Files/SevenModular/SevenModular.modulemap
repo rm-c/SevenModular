@@ -1,0 +1,6 @@
+framework module SevenModular {
+  umbrella header "SevenModular-umbrella.h"
+
+  export *
+  module * { export * }
+}

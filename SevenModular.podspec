@@ -21,16 +21,17 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/904190328@qq.com/SevenModular'
+  s.homepage         = 'https://github.com/rm-c/SevenModular'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '904190328@qq.com' => '904190328@qq.com' }
-  s.source           = { :git => 'https://github.com/904190328@qq.com/SevenModular.git', :tag => s.version.to_s }
+  s.author           = { 'CRM' => '904190328@qq.com' }
+  s.source           = { :git => 'https://github.com/rm-c/SevenModular.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
 
-  s.source_files = 'SevenModular/Classes/**/*'
+  s.source_files = 'SevenModular/Classes/**/*.{swift}'
   
   # s.resource_bundles = {
   #   'SevenModular' => ['SevenModular/Assets/*.png']
