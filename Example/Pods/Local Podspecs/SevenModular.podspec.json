@@ -28,7 +28,7 @@
     }
   },
   "ios": {
-    "vendored_frameworks": "**/**/UTESmartBandApi.framework"
+    "vendored_frameworks": "**/**/*.framework"
   },
   "dependencies": {
     "WCDB.swift": [
@@ -36,6 +36,9 @@
     ],
     "ObjectMapper": [
       "~> 4.2.0"
+    ],
+    "ZIPFoundation": [
+      "~> 0.9.11"
     ]
   },
   "swift_version": "5.0"

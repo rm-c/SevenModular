@@ -43,7 +43,8 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.ios.vendored_frameworks = '**/**/UTESmartBandApi.framework'
+  s.ios.vendored_frameworks = '**/**/*.framework'
   s.dependency 'WCDB.swift', '~> 1.0.8.2'
   s.dependency "ObjectMapper", '~> 4.2.0'
+  s.dependency 'ZIPFoundation', '~> 0.9.11'
 end
