@@ -1,6 +1,6 @@
 {
   "name": "SevenModular",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "A short description of SevenModular.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/rm-c/SevenModular",
@@ -13,13 +13,20 @@
   },
   "source": {
     "git": "https://github.com/rm-c/SevenModular.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "10.0"
   },
   "swift_versions": "5.0",
   "source_files": "SevenModular/Classes/**/*.{swift}",
+  "osx": {
+    "vendored_frameworks": "PLCrashReporter-1.2-rc2/Mac OS X Framework/CrashReporter.framework",
+    "resources": "PLCrashReporter-1.2-rc2/Mac OS X Framework/CrashReporter.framework",
+    "xcconfig": {
+      "LD_RUNPATH_SEARCH_PATHS": "@loader_path/../Frameworks"
+    }
+  },
   "ios": {
     "vendored_frameworks": "**/**/UTESmartBandApi.framework"
   },

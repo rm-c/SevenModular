@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SevenModular'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of SevenModular.'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,9 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'SevenModular' => ['SevenModular/Assets/*.png']
   # }
+  s.osx.vendored_framework = "PLCrashReporter-1.2-rc2/Mac OS X Framework/CrashReporter.framework"
+  s.osx.resource = "PLCrashReporter-1.2-rc2/Mac OS X Framework/CrashReporter.framework"
+  s.osx.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks' }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
