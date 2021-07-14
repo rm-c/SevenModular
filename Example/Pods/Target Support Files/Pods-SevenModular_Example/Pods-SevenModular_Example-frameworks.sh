@@ -177,28 +177,20 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SQLiteRepairKit/sqliterk.framework"
-  install_framework "${PODS_ROOT}/iOSOTARTK/vendored/RTKLEFoundation.framework"
-  install_framework "${PODS_ROOT}/iOSOTARTK/vendored/RTKOTASDK.framework"
   install_framework "${PODS_ROOT}/../../SevenModular/Classes/UTESmartBandApi.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SevenModular/SevenModular.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WCDB.swift/WCDBSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework"
-  install_framework "${PODS_ROOT}/iOSOTARTK/vendored/RTKLEFoundation.framework"
-  install_framework "${PODS_ROOT}/iOSOTARTK/vendored/RTKOTASDK.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SQLiteRepairKit/sqliterk.framework"
-  install_framework "${PODS_ROOT}/iOSOTARTK/vendored/RTKLEFoundation.framework"
-  install_framework "${PODS_ROOT}/iOSOTARTK/vendored/RTKOTASDK.framework"
   install_framework "${PODS_ROOT}/../../SevenModular/Classes/UTESmartBandApi.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SevenModular/SevenModular.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WCDB.swift/WCDBSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework"
-  install_framework "${PODS_ROOT}/iOSOTARTK/vendored/RTKLEFoundation.framework"
-  install_framework "${PODS_ROOT}/iOSOTARTK/vendored/RTKOTASDK.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
