@@ -44,13 +44,10 @@ TODO: Add long description of the pod here.
    s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.vendored_frameworks = '**/**/*.framework'
-#  s.resource_bundles = {
-#      'UTESmartBand' => ['Frameworks/UTESmartBandApi.framework/UTESmartBandApi']
-#  }
   
   s.dependency 'WCDB.swift', '~> 1.0.8.2'
   s.dependency "ObjectMapper", '~> 4.2.0'
   s.dependency 'ZIPFoundation', '~> 0.9.11'
-  s.dependency 'iOSOTARTK', '~> 1.0.6'
+#  s.dependency 'iOSOTARTK', '~> 1.0.6'
   
 end

@@ -1,6 +1,6 @@
 {
   "name": "SevenModular",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "A short description of SevenModular.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/rm-c/SevenModular",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/rm-c/SevenModular.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "10.0"
@@ -37,9 +37,6 @@
     ],
     "ZIPFoundation": [
       "~> 0.9.11"
-    ],
-    "iOSOTARTK": [
-      "~> 1.0.6"
     ]
   },
   "swift_version": "5.0"
