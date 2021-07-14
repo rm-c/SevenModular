@@ -20,16 +20,14 @@
   },
   "swift_versions": "5.0",
   "source_files": "SevenModular/Classes/**/*.{swift}",
-  "osx": {
-    "vendored_frameworks": "PLCrashReporter-1.2-rc2/Mac OS X Framework/CrashReporter.framework",
-    "resources": "PLCrashReporter-1.2-rc2/Mac OS X Framework/CrashReporter.framework",
-    "xcconfig": {
-      "LD_RUNPATH_SEARCH_PATHS": "@loader_path/../Frameworks"
-    }
+  "xcconfig": {
+    "LD_RUNPATH_SEARCH_PATHS": "@loader_path/../Frameworks"
   },
-  "ios": {
-    "vendored_frameworks": "**/**/*.framework"
-  },
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "vendored_frameworks": "**/**/*.framework",
   "dependencies": {
     "WCDB.swift": [
       "~> 1.0.8.2"
@@ -39,6 +37,9 @@
     ],
     "ZIPFoundation": [
       "~> 0.9.11"
+    ],
+    "iOSOTARTK": [
+      "~> 1.0.6"
     ]
   },
   "swift_version": "5.0"

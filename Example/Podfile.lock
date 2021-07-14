@@ -1,6 +1,8 @@
 PODS:
+  - iOSOTARTK (1.0.6)
   - ObjectMapper (4.2.0)
   - SevenModular (0.1.2):
+    - iOSOTARTK (~> 1.0.6)
     - ObjectMapper (~> 4.2.0)
     - WCDB.swift (~> 1.0.8.2)
     - ZIPFoundation (~> 0.9.11)
@@ -17,6 +19,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - iOSOTARTK
     - ObjectMapper
     - SQLiteRepairKit
     - WCDB.swift
@@ -28,13 +31,14 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  iOSOTARTK: 248be8e3a7eb6e18ab56c5369b24082fd41bc219
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
-  SevenModular: 7043b0320f23dc3a918a5dcc20fdb6b9f3143c97
+  SevenModular: 6506bff94042e6d3284b2c175df84d7348cdf075
   SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
   WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
   ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
 
-PODFILE CHECKSUM: 06f6d973be347422acf31dc0c51955c08d21f4b5
+PODFILE CHECKSUM: 11d08bf0c12268bf64ed25800c8ee2b9564db7a8
 
 COCOAPODS: 1.10.1
