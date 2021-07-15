@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SevenModular'
-  s.version          = '0.1.4'
-  s.summary          = 'SevenModular公用库'
+  s.version          = '0.1.5'
+  s.summary          = 'Seven模块公用库'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -42,7 +42,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'Foundation'
-  # s.dependency 'AFNetworking', '~> 2.3'
   s.vendored_frameworks = '**/**/*.framework'
   
   s.dependency 'WCDB.swift', '~> 1.0.8.2'
