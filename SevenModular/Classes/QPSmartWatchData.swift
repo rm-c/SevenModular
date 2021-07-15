@@ -35,17 +35,17 @@ public class QPSmartHRMData: NSObject, Mappable, TableCodable, TableModel {
         
     }
     
-    @objc static func dataSearch(time: String) -> [QPSmartHRMData] {
+    @objc public static func dataSearch(time: String) -> [QPSmartHRMData] {
         return Database.defaulted.seven_getObjects(on: QPSmartHRMData.Properties.all,where: QPSmartHRMData.Properties.heartTime.like(time))
     }
     
-    @objc static func heartCounts(time: String,datas: [QPSmartHRMData] = []) -> [String] {
+    @objc public static func heartCounts(time: String,datas: [QPSmartHRMData] = []) -> [String] {
         return (datas.isEmpty ? self.dataSearch(time: time) : datas).compactMap { data -> String in
             return data.heartCount
         }
     }
     
-    @objc static func dataReload(time: String,datas: [QPSmartHRMData] = []) -> [Day24Data] {
+    @objc public static func dataReload(time: String,datas: [QPSmartHRMData] = []) -> [Day24Data] {
         let oneDays = datas.isEmpty ? self.dataSearch(time: time) : datas
         
         var day24Array:[Day24Data] = []//Array.init(repeating: Day24Data(), count: 24)
@@ -81,12 +81,12 @@ public class QPSmartHRMData: NSObject, Mappable, TableCodable, TableModel {
         return day24Array
     }
     
-    @objc static func jsonToModel(array: Array<[String : Any]>) -> [QPSmartHRMData]? {
+    @objc public static func jsonToModel(array: Array<[String : Any]>) -> [QPSmartHRMData]? {
         return Mapper<QPSmartHRMData>().mapArray(JSONArray: array)
     }
     
     //数据存储
-    @objc static func dataInsert(datas: [QPSmartHRMData]) {
+    @objc public static func dataInsert(datas: [QPSmartHRMData]) {
         Database.defaulted.seven_insertOrReplace(objects: datas, on: QPSmartHRMData.Properties.all)
     }
     
@@ -153,24 +153,24 @@ public class QPSmartBloodData: NSObject, Mappable, TableCodable, TableModel {
         
     }
     
-    @objc static func dataSearch(time: String) -> [QPSmartBloodData] {
+    @objc public static func dataSearch(time: String) -> [QPSmartBloodData] {
         return Database.defaulted.seven_getObjects(on: QPSmartBloodData.Properties.all,where: QPSmartBloodData.Properties.bloodTime.like(time))
     }
     
-    @objc static func bloodHigh(time: String,datas: [QPSmartBloodData] = []) -> [String] {
+    @objc public static func bloodHigh(time: String,datas: [QPSmartBloodData] = []) -> [String] {
         return (datas.isEmpty ? self.dataSearch(time: time) : datas).compactMap { data -> String in
             return data.bloodSystolic
         }
     }
     
-    @objc static func bloodLow(time: String,datas: [QPSmartBloodData] = []) -> [String] {
+    @objc public static func bloodLow(time: String,datas: [QPSmartBloodData] = []) -> [String] {
         return (datas.isEmpty ? self.dataSearch(time: time) : datas).compactMap { data -> String in
             return data.bloodDiastolic
         }
     }
     
     //高压最大值
-    @objc static func maxBlood(values: [QPSmartBloodData]) -> String {
+    @objc public static func maxBlood(values: [QPSmartBloodData]) -> String {
         var bloodMax = values.first!
         values.forEach { blood in
             if let bloodSystolic = Int(blood.bloodSystolic), let maxBlood = Int(bloodMax.bloodSystolic), bloodSystolic > maxBlood {
@@ -180,7 +180,7 @@ public class QPSmartBloodData: NSObject, Mappable, TableCodable, TableModel {
         return "\(bloodMax.bloodSystolic ?? "")/\(bloodMax.bloodDiastolic ?? "")"
     }
     //最小
-    @objc static func minBlood(values: [QPSmartBloodData]) -> String {
+    @objc public static func minBlood(values: [QPSmartBloodData]) -> String {
         var bloodMin = values.first!
         values.forEach { blood in
             if let bloodDiastolic = Int(blood.bloodDiastolic), let maxBlood = Int(bloodMin.bloodDiastolic), bloodDiastolic < maxBlood {
@@ -191,7 +191,7 @@ public class QPSmartBloodData: NSObject, Mappable, TableCodable, TableModel {
     }
     
     //把一天的数据分成24份 一个小时一份 用来画折线图
-    @objc static func dataReload(time: String,datas: [QPSmartBloodData] = []) -> [Day24Data] {
+    @objc public static func dataReload(time: String,datas: [QPSmartBloodData] = []) -> [Day24Data] {
         let oneDays = datas.isEmpty ? self.dataSearch(time: time) : datas
         
         var day24Array:[Day24Data] = []// = Array.init(repeating: Day24Data(), count: 24)
@@ -231,12 +231,12 @@ public class QPSmartBloodData: NSObject, Mappable, TableCodable, TableModel {
         return day24Array
     }
     
-    @objc static func jsonToModel(array: Array<[String : Any]>) -> [QPSmartBloodData]? {
+    @objc public static func jsonToModel(array: Array<[String : Any]>) -> [QPSmartBloodData]? {
         return Mapper<QPSmartBloodData>().mapArray(JSONArray: array)
     }
     
     //数据存储
-    @objc static func dataInsert(datas: [QPSmartBloodData]) {
+    @objc public static func dataInsert(datas: [QPSmartBloodData]) {
         Database.defaulted.seven_insertOrReplace(objects: datas, on: QPSmartBloodData.Properties.all)
     }
     
@@ -305,17 +305,17 @@ public class QPSmartBodyTemperatureData: NSObject, Mappable, TableCodable, Table
         
     }
     
-    @objc static func dataSearch(time: String) -> [QPSmartBodyTemperatureData] {
+    @objc public static func dataSearch(time: String) -> [QPSmartBodyTemperatureData] {
         return Database.defaulted.seven_getObjects(on: QPSmartBodyTemperatureData.Properties.all,where: QPSmartBodyTemperatureData.Properties.time.like(time))
     }
     
-    @objc static func bodyTemperatureCounts(time: String, datas: [QPSmartBodyTemperatureData] = []) -> [String] {
+    @objc public static func bodyTemperatureCounts(time: String, datas: [QPSmartBodyTemperatureData] = []) -> [String] {
         return (datas.isEmpty ? self.dataSearch(time: time) : datas).compactMap { data -> String in
             return data.bodyTemperature
         }
     }
     
-    @objc static func dataReload(time: String, datas: [QPSmartBodyTemperatureData] = []) -> [Day24Data] {
+    @objc public static func dataReload(time: String, datas: [QPSmartBodyTemperatureData] = []) -> [Day24Data] {
         let oneDays = datas.isEmpty ? self.dataSearch(time: time) : datas
         
         var day24Array:[Day24Data] = []//Array.init(repeating: Day24Data(), count: 24)
@@ -351,12 +351,12 @@ public class QPSmartBodyTemperatureData: NSObject, Mappable, TableCodable, Table
         return day24Array
     }
     
-    @objc static func jsonToModel(array: Array<[String : Any]>) -> [QPSmartBodyTemperatureData]? {
+    @objc public static func jsonToModel(array: Array<[String : Any]>) -> [QPSmartBodyTemperatureData]? {
         return Mapper<QPSmartBodyTemperatureData>().mapArray(JSONArray: array)
     }
     
     //数据存储
-    @objc static func dataInsert(datas: [QPSmartBodyTemperatureData]) {
+    @objc public static func dataInsert(datas: [QPSmartBodyTemperatureData]) {
         Database.defaulted.seven_insertOrReplace(objects: datas, on: QPSmartBodyTemperatureData.Properties.all)
     }
     
@@ -403,36 +403,36 @@ extension UTEModelBodyTemperature {
 
 //用来画线
 public class Day24Data: NSObject {
-    @objc var index:Int = 0
-    @objc var is_empty: Bool = true
-    @objc var values:[String]! = []   //存放数组里面的数据  高压
-    @objc var other_values:[String]! = []  //其他数据 舒张压
-    @objc var time:String = ""
-    @objc var data_type: Int = 0 //数据类型。0心率 1血压 2体温
+    @objc public var index:Int = 0
+    @objc public var is_empty: Bool = true
+    @objc public var values:[String]! = []   //存放数组里面的数据  高压
+    @objc public var other_values:[String]! = []  //其他数据 舒张压
+    @objc public var time:String = ""
+    @objc public var data_type: Int = 0 //数据类型。0心率 1血压 2体温
     
-    @objc open func averageValues() -> Float {
+    @objc public func averageValues() -> Float {
         return values.compactMap{Float($0)}.reduce(0, +)/Float(values.count)
     }
     
-    @objc open func averageotherValues() -> Float {
+    @objc public func averageotherValues() -> Float {
         return other_values.compactMap{Float($0)}.reduce(0, +)/Float(other_values.count)
     }
     
     
-//    @objc open func averageValuesFloat() -> Float {
+//    @objc public open func averageValuesFloat() -> Float {
 //        return Float(values.compactMap{Float($0)}.reduce(0, +)/Float(values.count))
 //    }
     
     //获取平均值
-    @objc static func averageObtain(values: [String]) -> Float {
+    @objc public static func averageObtain(values: [String]) -> Float {
         return values.compactMap{Float($0)}.reduce(0, +)/Float(values.count)
     }
     //获取最大值
-    @objc static func highBodyObtain(values: [String]) -> Float {
+    @objc public static func highBodyObtain(values: [String]) -> Float {
         return values.compactMap{Float($0)}.max() ?? 36
     }
     //获取最小值
-    @objc static func lowBodyObtain(values: [String]) -> Float {
+    @objc public static func lowBodyObtain(values: [String]) -> Float {
         return values.compactMap{Float($0)}.min() ?? 0
     }
 }

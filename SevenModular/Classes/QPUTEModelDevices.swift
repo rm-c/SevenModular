@@ -44,7 +44,7 @@ public class QPUTEModelDevices:NSObject, Mappable, TableCodable, TableModel {
         return nil
     }
     
-    @objc static func deleteDevice(device: UTEModelDevices) {
+    @objc public static func deleteDevice(device: UTEModelDevices) {
 //        let model = QPUTEModelDevices()
 //        model.name = device.name
 //        model.identifier = device.identifier

@@ -17,14 +17,14 @@ public class QPUTEBrightScreenTime:NSObject, Mappable, TableCodable, TableModel 
     }
     
     var id: Int! = 0
-    @objc var lightTime: Int = 5
-    @objc var enable: Bool = true
+    @objc public var lightTime: Int = 5
+    @objc public var enable: Bool = true
     
     override init() {
         
     }
     
-    @objc static func searchData() -> QPUTEBrightScreenTime {
+    @objc public static func searchData() -> QPUTEBrightScreenTime {
         guard let dataModel:QPUTEBrightScreenTime = Database.defaulted.seven_getObject(on: QPUTEBrightScreenTime.Properties.all) else {
             let model = QPUTEBrightScreenTime()
             Database.defaulted.seven_insert(objects: model)
@@ -33,11 +33,11 @@ public class QPUTEBrightScreenTime:NSObject, Mappable, TableCodable, TableModel 
         return dataModel
     }
     
-    @objc static func insertData(model: QPUTEBrightScreenTime) {
+    @objc public static func insertData(model: QPUTEBrightScreenTime) {
         Database.defaulted.seven_insert(objects: model)
     }
     
-    @objc static func updateData(model: QPUTEBrightScreenTime) {
+    @objc public static func updateData(model: QPUTEBrightScreenTime) {
         Database.defaulted.seven_update(objects: model, on: QPUTEBrightScreenTime.Properties.all, where: QPUTEBrightScreenTime.Properties.id == 0)
     }
     

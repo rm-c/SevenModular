@@ -19,14 +19,14 @@ public class QPUTEWeatherIndex: NSObject,Mappable {
 //    var tem_low_temperature: Int! = 0
 //    var latitude: String! = ""
 //    var longitude: String! = ""
-    @objc var code: Int = 0
+    @objc public var code: Int = 0
     var text: String! = ""
     
     override init() {
         
     }
     
-    @objc static func jsonDic(dic: [String:Any]) -> QPUTEWeatherIndex? {
+    @objc public static func jsonDic(dic: [String:Any]) -> QPUTEWeatherIndex? {
         return QPUTEWeatherIndex.init(JSON: dic)
     }
     

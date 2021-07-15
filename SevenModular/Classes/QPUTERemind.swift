@@ -27,12 +27,12 @@ public class QPUTERemind:NSObject, Mappable, TableCodable, TableModel {
     }
     
     var id: Int!
-    @objc var name: String! = ""
+    @objc public var name: String! = ""
     var remindType: QPUTERemindType! = .QPUTE_Phone
-    @objc var remindSwitch: Bool = false
-    @objc var remindIcon: String! = ""
+    @objc public var remindSwitch: Bool = false
+    @objc public var remindIcon: String! = ""
     
-    @objc func remindTypeInt() -> Int {
+    @objc public func remindTypeInt() -> Int {
         return self.remindType.rawValue
     }
     
@@ -44,12 +44,12 @@ public class QPUTERemind:NSObject, Mappable, TableCodable, TableModel {
         self.id = remindType.rawValue
     }
     
-    @objc static func defaultedNotiArray() ->[QPUTERemind] {
+    @objc public static func defaultedNotiArray() ->[QPUTERemind] {
         return [QPUTERemind.init(name: "来电提醒", remindType: .QPUTE_Phone, remindSwitch: false, remindIcon: "band_noti_0"),QPUTERemind.init(name: "短信提醒", remindType: .QPUTE_SMS, remindSwitch: false, remindIcon: "band_noti_1"),QPUTERemind.init(name: "微信提醒", remindType: .QPUTE_Wechat, remindSwitch: false, remindIcon: "band_noti_2"),QPUTERemind.init(name: "QQ提醒", remindType: .QPUTE_QQ, remindSwitch: false, remindIcon: "band_noti_3"),QPUTERemind.init(name: "其他提醒", remindType: .QPUTE_Other, remindSwitch: false, remindIcon: "band_noti_4")]
     }
     
     
-    @objc static func searchData() -> [QPUTERemind] {
+    @objc public static func searchData() -> [QPUTERemind] {
         
         var array:[QPUTERemind] = Database.defaulted.seven_getObjects(on: QPUTERemind.Properties.all)
         if !array.isEmpty {
@@ -63,11 +63,11 @@ public class QPUTERemind:NSObject, Mappable, TableCodable, TableModel {
         return array
     }
     
-    @objc static func insertData(models: [QPUTERemind]) {
+    @objc public static func insertData(models: [QPUTERemind]) {
         Database.defaulted.seven_insert(objects: models)
     }
     
-    @objc static func updateData(model: QPUTERemind) {
+    @objc public static func updateData(model: QPUTERemind) {
         Database.defaulted.seven_update(objects: model, on: QPUTERemind.Properties.all, where: QPUTERemind.Properties.id == model.id)
     }
     

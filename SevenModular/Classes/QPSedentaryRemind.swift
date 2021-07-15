@@ -18,13 +18,13 @@ public class QPSedentaryRemind:NSObject, Mappable,TableCodable, TableModel {
     }
     
     var id: Int! = 0
-    @objc var startTime: String! = "9:00"
-    @objc var endTime: String! = "21:00"
-    @objc var enable: Bool = false
-    @objc var duration: Int = 60
-    @objc var enableSiesta: Bool = false
+    @objc open var startTime: String! = "9:00"
+    @objc open var endTime: String! = "21:00"
+    @objc open var enable: Bool = false
+    @objc open var duration: Int = 60
+    @objc open var enableSiesta: Bool = false
     
-    @objc func turnRemind() -> UTEModelDeviceSitRemind {
+    @objc public func turnRemind() -> UTEModelDeviceSitRemind {
         let model = UTEModelDeviceSitRemind()
         model.startTime = self.startTime
         model.endTime = self.endTime
@@ -34,7 +34,7 @@ public class QPSedentaryRemind:NSObject, Mappable,TableCodable, TableModel {
         return model
     }
     
-    @objc static func searchData() -> QPSedentaryRemind {
+    @objc public static func searchData() -> QPSedentaryRemind {
         guard let dataModel:QPSedentaryRemind = Database.defaulted.seven_getObject(on: QPSedentaryRemind.Properties.all) else {
             let model = QPSedentaryRemind()
             model.enable = UTESmartBandClient.sharedInstance().connectedDevicesModel!.isHasSitRemindDuration
@@ -44,7 +44,7 @@ public class QPSedentaryRemind:NSObject, Mappable,TableCodable, TableModel {
         return dataModel
     }
     
-    @objc static func updateData(model: QPSedentaryRemind) {
+    @objc public static func updateData(model: QPSedentaryRemind) {
         Database.defaulted.seven_update(objects: model, on: QPSedentaryRemind.Properties.all, where: QPSedentaryRemind.Properties.id == 0)
     }
     

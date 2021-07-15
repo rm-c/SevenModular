@@ -28,13 +28,13 @@ public class QPUTEAlarmWeek:NSObject, Mappable,TableCodable, TableModel {
         return String(describing: QPUTEAlarmWeek.self)
     }
     
-    var id: Int!
-    @objc var title: String! = "闹钟"
-    @objc var time: String! = ""
-    @objc var week: Int = 0
-    @objc var enable: Bool = false
-    @objc var num: Int = 0
-    @objc var countVibrate: Int = 0
+    open var id: Int!
+    @objc open var title: String! = "闹钟"
+    @objc open var time: String! = ""
+    @objc open var week: Int = 0
+    @objc open var enable: Bool = false
+    @objc open var num: Int = 0
+    @objc open var countVibrate: Int = 0
     
     init(title:String, selected: Bool, alarmWeek: UTEAlarmWeek) {
         self.title = title
@@ -44,34 +44,34 @@ public class QPUTEAlarmWeek:NSObject, Mappable,TableCodable, TableModel {
     
     override init() {}
     
-    @objc static func searchData() -> [QPUTEAlarmWeek] {
+    @objc public static func searchData() -> [QPUTEAlarmWeek] {
         return Database.defaulted.seven_getObjects(on: QPUTEAlarmWeek.Properties.all)
     }
     
-    @objc static func insertData(model: QPUTEAlarmWeek) {
+    @objc public static func insertData(model: QPUTEAlarmWeek) {
         Database.defaulted.seven_insert(objects: model)
     }
     
-    @objc static func deleteData(model: QPUTEAlarmWeek) {
+    @objc public static func deleteData(model: QPUTEAlarmWeek) {
         Database.defaulted.seven_deleteObject(with: QPUTEAlarmWeek.self, where: QPUTEAlarmWeek.Properties.id == model.id)
     }
     
-    @objc static func updateData(model: QPUTEAlarmWeek) {
+    @objc public static func updateData(model: QPUTEAlarmWeek) {
         Database.defaulted.seven_update(objects: model, on: QPUTEAlarmWeek.Properties.all, where: QPUTEAlarmWeek.Properties.id == model.id)
         UTESmartBandClient.sharedInstance().setUTEAlarmArray([model.turnAlarm()], vibrate: 9)
     }
     
-    @objc static func turnAlarms(values: [QPUTEAlarmWeek]) -> [UTEModelAlarm] {
+    @objc public static func turnAlarms(values: [QPUTEAlarmWeek]) -> [UTEModelAlarm] {
         return values.compactMap{$0.turnAlarm()}
     }
     
     //时间选择默认显示
-    @objc static func defaultedData() -> [QPUTEAlarmWeek] {
+    @objc public static func defaultedData() -> [QPUTEAlarmWeek] {
         return [QPUTEAlarmWeek.init(title: "周日", selected: false, alarmWeek: .sunday),QPUTEAlarmWeek.init(title: "周一", selected: false, alarmWeek: .monday),QPUTEAlarmWeek.init(title: "周二", selected: false, alarmWeek: .tuesday),QPUTEAlarmWeek.init(title: "周三", selected: false, alarmWeek: .wednesday),QPUTEAlarmWeek.init(title: "周四", selected: false, alarmWeek: .thursday),QPUTEAlarmWeek.init(title: "周五", selected: false, alarmWeek: .friday),QPUTEAlarmWeek.init(title: "周六", selected: false, alarmWeek: .saturday)]
     }
     
     //过滤选中的 进行组合
-    @objc static func dataWeek(models:[QPUTEAlarmWeek]) -> Int {
+    @objc public static func dataWeek(models:[QPUTEAlarmWeek]) -> Int {
         var week:Int = 0
         models.filter { model in
             return model.enable
@@ -82,21 +82,21 @@ public class QPUTEAlarmWeek:NSObject, Mappable,TableCodable, TableModel {
     }
     
     //过滤选中的
-    @objc static func filter(models:[QPUTEAlarmWeek]) -> [QPUTEAlarmWeek] {
+    @objc public static func filter(models:[QPUTEAlarmWeek]) -> [QPUTEAlarmWeek] {
         return models.filter { model in
             return model.enable
         }
     }
     
     //计算
-    @objc static func reduce(models:[QPUTEAlarmWeek]) -> String {
+    @objc public static func reduce(models:[QPUTEAlarmWeek]) -> String {
         return models.reduce("") { weekString, model in
             return weekString + " " + model.title.suffix(2)
         }
     }
     
     //闹钟编号
-    @objc static func alarmNum(values:[QPUTEAlarmWeek]) -> Int {
+    @objc public static func alarmNum(values:[QPUTEAlarmWeek]) -> Int {
         let nums = values.compactMap{$0.num}
         if !nums.contains(1) {
             return 1
@@ -111,7 +111,7 @@ public class QPUTEAlarmWeek:NSObject, Mappable,TableCodable, TableModel {
         
     }
     
-    @objc func turnAlarm() -> UTEModelAlarm {
+    @objc public func turnAlarm() -> UTEModelAlarm {
         let model = UTEModelAlarm()
         model.time = self.time
         model.enable = self.enable
