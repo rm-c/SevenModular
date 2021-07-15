@@ -22,7 +22,7 @@ public class QPUTEWeatherIndex: NSObject,Mappable {
     @objc public var code: Int = 0
     var text: String! = ""
     
-    override init() {
+    @objc override public init() {
         
     }
     

@@ -42,7 +42,7 @@ public class QPUTEAlarmWeek:NSObject, Mappable,TableCodable, TableModel {
         self.week = alarmWeek.rawValue
     }
     
-    override init() {}
+    @objc override public init() {}
     
     @objc public static func searchData() -> [QPUTEAlarmWeek] {
         return Database.defaulted.seven_getObjects(on: QPUTEAlarmWeek.Properties.all)

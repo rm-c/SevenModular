@@ -21,7 +21,7 @@ public class QPUTEModelDevices:NSObject, Mappable, TableCodable, TableModel {
     var identifier: String! = ""
     var name: String! = ""
     
-    override init() {
+    @objc override public init() {
         
     }
     

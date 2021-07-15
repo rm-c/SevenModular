@@ -32,7 +32,7 @@ struct QPBandSync {
 
 public class QPSmartBandManager: NSObject, UTEManagerDelegate {
     
-    @objc static let shareManger = QPSmartBandManager()
+    @objc public static let shareManger = QPSmartBandManager()
     
 //    public typealias findDevicesBlock = (_ devicesState: UTEDevicesSate?) -> Void
 //    public typealias callBackBlock = (_ devicesState: UTECallBack?) -> Void

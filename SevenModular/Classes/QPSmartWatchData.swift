@@ -31,7 +31,7 @@ public class QPSmartHRMData: NSObject, Mappable, TableCodable, TableModel {
 //    var heartType: Int! = 0//QPUTEHRMType! = .QPHRMTypeNormal
     var uploadSeven: Bool! = false
     
-    override init() {
+    @objc override public init() {
         
     }
     
@@ -149,7 +149,7 @@ public class QPSmartBloodData: NSObject, Mappable, TableCodable, TableModel {
 //    var heartRateIrregular: Bool! = false
     var uploadSeven: Bool! = false
     
-    override init() {
+    @objc override public init() {
         
     }
     
@@ -301,7 +301,7 @@ public class QPSmartBodyTemperatureData: NSObject, Mappable, TableCodable, Table
 //    var shellTemperature: String! = ""
     var uploadSeven: Bool! = false
     
-    override init() {
+    @objc override public init() {
         
     }
     

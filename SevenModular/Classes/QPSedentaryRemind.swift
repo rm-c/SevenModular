@@ -49,7 +49,7 @@ public class QPSedentaryRemind:NSObject, Mappable,TableCodable, TableModel {
     }
     
     
-    override init() {
+    override public init() {
     }
     
     required public init?(map: Map) {

@@ -20,7 +20,7 @@ public class QPUTEBrightScreenTime:NSObject, Mappable, TableCodable, TableModel 
     @objc public var lightTime: Int = 5
     @objc public var enable: Bool = true
     
-    override init() {
+    @objc override public init() {
         
     }
     
