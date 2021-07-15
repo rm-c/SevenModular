@@ -1,7 +1,7 @@
 {
   "name": "SevenModular",
-  "version": "0.1.3",
-  "summary": "A short description of SevenModular.",
+  "version": "0.1.4",
+  "summary": "SevenModular公用库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/rm-c/SevenModular",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/rm-c/SevenModular.git",
-    "tag": "0.1.3"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "10.0"

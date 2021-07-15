@@ -17,9 +17,9 @@
 		053A77CA71529799148D4FB784D803D6 /* StatementAttach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401D7472FDF2B44181063EFF1A4ED3C4 /* StatementAttach.swift */; };
 		0600D94588B1CCAA3687562FD716B6DC /* sqliterk_crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B4CD6255E690BD11D560D5B1180FCE7 /* sqliterk_crypto.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		06D5ECC18119CCF5C485C759654BE53B /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = CF8DCD24F0B56A535DA3941BCBC86557 /* queue.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0776B54EB591097DAB1DE1CAB7DF510B /* QPUTEBrightScreenTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5A4A55475703E8BB7D400E6952544 /* QPUTEBrightScreenTime.swift */; };
 		07DF8CE18F5857CF4D21491ED7114086 /* fts3_tokenize_vtab.c in Sources */ = {isa = PBXBuildFile; fileRef = B21526DA734147E56BF142FFEED4009E /* fts3_tokenize_vtab.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		09C1426051E1621DA72755FB743A4405 /* CoreStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383229962025084914FB2C786409AFC /* CoreStatement.swift */; };
+		09D478BED02A4486520B21A17E47D48A /* QPSmartWatchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960E905C7D803D277DF9C5FDB8F5F18A /* QPSmartWatchData.swift */; };
 		0B09D00C5F5D33E4911C313C850A4CC0 /* sqliterk_values.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4D5729C148B4409B3824EDD2EDEE19 /* sqliterk_values.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0B6000AD19AB3564A1C5BA8D1EBAC6A6 /* fts3_unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 53993AC63AC7F1BF86C6BC1DDDA23F7E /* fts3_unicode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0C2F37805C8FE7390EBC996E7F573A50 /* fts3_expr.c in Sources */ = {isa = PBXBuildFile; fileRef = E596921526F916E9B95117654C97B2FB /* fts3_expr.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -39,6 +39,7 @@
 		144F3F4D14B299C8470F33160B523648 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93290D31B8FC003A64DF07B35DEA8D6E /* Convenience.swift */; };
 		1467AAE0F61C3E1876B04CC247BEAF11 /* hwtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 54B1A337915E9446B6F68D64D47B2B63 /* hwtime.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		152515C5B00401C1A9CDEDFAEADD5A2B /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FFB378DC3D964D72B4F302886D38E26 /* crypto.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		162D59D955F0580D6E503487422FD2E4 /* QPUTEModelDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632DBCF2B9E2A39CB65E45257AEB2399 /* QPUTEModelDevices.swift */; };
 		16C7896023544FA93D5C9A4AAFA8D75D /* keywordhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A99E941ADF2C0055EF55CE0DEDB058 /* keywordhash.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		16E5FFFA2B98CF99E544100B196A1D3B /* fts3_tokenizer.c in Sources */ = {isa = PBXBuildFile; fileRef = 30FA629CE3EDC87EBF651578802129B0 /* fts3_tokenizer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18E276B9747E7D1FEB58FB4CBE90777E /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C88425DA683CC596213FA7DDF145C7 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -126,6 +127,7 @@
 		536EC65B43BD971B316EE036AAA377D8 /* sqlite3rbu.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F8E1BD53184BEE4B0424A3D573B34C3 /* sqlite3rbu.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		54264BCFC5E077FD288107000BC725B7 /* sqliteLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 71702459BD55B423A57F6A42E41A0C51 /* sqliteLimit.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5450916F55158EDE195F6139A04DE24C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7B12ACCA3A3108E045469B890E23DB /* Security.framework */; };
+		54858FDF559B330427CE9516B59E2549 /* QPSedentaryRemind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D149005D96199C588DDED95B191D7 /* QPSedentaryRemind.swift */; };
 		548A30E977EAF090239A15F1421C0AB2 /* StatementCreateIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB84DBE8B4314D4629E24004A0BE44F /* StatementCreateIndex.swift */; };
 		551D96BC2A7FDF144A92DB4D953F7F7B /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E185EF06D20125E3B344088C32A7A77 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		553CF23D91DC8777B26191C77938004A /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1689DD8920CB9217A5A19697CDBC935D /* NSDecimalNumberTransform.swift */; };
@@ -149,14 +151,10 @@
 		65F3F57891C3534229655745DB094F1B /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3011C9C80CF3834094F4A8496BDBF /* TransformOf.swift */; };
 		664B70329CC935DB023416ADE2F203DC /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ACC49E0640C1A0EAA1FCA37AB5D123 /* DictionaryTransform.swift */; };
 		679CFAA2F72BB7D400ACCC84ABD87C71 /* fkey.c in Sources */ = {isa = PBXBuildFile; fileRef = B96B91E11FEAE6F2A62A77174FBB3081 /* fkey.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		684937AAC511A683A8B6DF3288B36ED7 /* UTEAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1D929DFA32A39539D15A9106B40B6 /* UTEAudioPlayer.swift */; };
 		686773503764CC609B38ED31CFF3B704 /* TableEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3048107B3E492C248E8BC76331C517 /* TableEncoder.swift */; };
 		68785CFC275E71493A6EE1B2E67BD3D6 /* TableCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975BB235C1B2BA83745395BAD60B936 /* TableCodable.swift */; };
-		68C5914DD0C068A446165593C49B655A /* QPUTEWeatherIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29063F6AEDAC509AB74472FEB5BA794F /* QPUTEWeatherIndex.swift */; };
-		6A1BD1281EFD531A1404EBDB8892382D /* QPUTERemind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405065F0BF4C66B272FF3A4DF1B46AF6 /* QPUTERemind.swift */; };
 		6A31E0FE116E43F577326C2CBC68FBE6 /* fts5.c in Sources */ = {isa = PBXBuildFile; fileRef = 9730ABD2A5A1C447855EEFC6B4E677C7 /* fts5.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6A3DE9A6FB086330C413C128FAC3D563 /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178F58FBD66DC4C895D3F5789C50406 /* Data+Compression.swift */; };
-		6AB5E3BC557B9D48A1EAB4489317620B /* SevenModular-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6171BE90625E7C1E1A9F87953A1573CF /* SevenModular-dummy.m */; };
 		6AF248402836E8CEE0040ED09EAE2CDF /* StatementExplain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882CFF59FF4C7D1CD75D3A59BE4F991 /* StatementExplain.swift */; };
 		6BB23092513471B8B818D6C2B0201492 /* sqlite3ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 321F3875580101B123C6E6934F4B15D0 /* sqlite3ext.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6CCB7A16D832492DC55E715A636D0859 /* ColumnResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D54BB8CED49EAAE9ED38C9BE93353 /* ColumnResult.swift */; };
@@ -165,11 +163,11 @@
 		6E5DA8BE4D7E56CCD1D8BD8FD15CBB04 /* btree.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3DD8D113BB634409BFFCB9CDDFAE7 /* btree.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		708BE62B77F1CDECF4D83063722B9A8F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B5818D00DCE66492A3DB45D9C3936236 /* main.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		714A77FC768624DBA29941159CC500D2 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F48CCFCEB88F2EA3F2F5A9A4E84905 /* Database.swift */; };
-		72774977E81D1548F0FE4C1DD444DB46 /* WatchDataIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E02C784857C46B3247915167D6F61C /* WatchDataIndex.swift */; };
 		72C6DF92ED611962829990D8664A87AE /* Pragma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA3147730DBBF6B49CCD10FEC8FC787 /* Pragma.swift */; };
 		746EC1A39E4CD37C1419AD6CE875261E /* fts3Int.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A5648219B88A131ACAF485AA392202 /* fts3Int.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		74A6E8E55B2D7E417B5BAC44A9ABA381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC1C840C5B31109369470A960C21C1B /* Foundation.framework */; };
 		75B91B5520423B43FA3636AC420DE9A4 /* WCDBTokenize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5800A17AF8CDA352BE0195315E214EC /* WCDBTokenize.swift */; };
+		77A6F298B7625D97BF8EC270EA4993E0 /* QPUTEBrightScreenTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BA9D5648C0B3AF550748F6A02EA500 /* QPUTEBrightScreenTime.swift */; };
 		781EDD6EED42F4DA9613E5B61F974EC5 /* WCDBOptimizedSQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F47168471E59F1511B9028496EA526 /* WCDBOptimizedSQLCipher-dummy.m */; };
 		78BB4BFABCB498A10A06C02661795CDB /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ABE1D6DFABA386D8A973AF2E9390CB /* ObjectMapper-dummy.m */; };
 		78D9C0CBBB6C97488A2DA09C2F775CC7 /* ColumnIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397503A2E049375A4673382D614EF09D /* ColumnIndex.swift */; };
@@ -178,7 +176,6 @@
 		7AB33110131FB8FB55384FAD187099B6 /* ZIPFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E75EE186B04379ED8E270866EC7C271 /* ZIPFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B921A04C2D2071B0D9762CEF5289FA6 /* sqlite3userauth.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A3B87E35FAB2C128A4833D1B2FE477 /* sqlite3userauth.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7E9ECC0E9BB72D9CABEE682A606E2ADF /* fts3_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = E9485C7406CE7601CEC3A46E62D8768A /* fts3_hash.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7EB3E25DD6C6386527CD1E06253716B1 /* SEUTEDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17CDFE2108F02A339D16131CEDA649C /* SEUTEDatabase.swift */; };
 		7F5BE476CE60534A276ACC4632DCBCDC /* auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 260E96EE60441E7B7638A11E4071FFA2 /* auth.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7F91D2ABE983E59B9AA865DBD3210273 /* Pods-SevenModular_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89FF99814AC64712C61D31F8E7EDAB54 /* Pods-SevenModular_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8155A63AA6C0724D0C5C1AE5BAF84F29 /* JoinClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F624E42A3FD456E8D2533B6C3E6F60E /* JoinClause.swift */; };
@@ -186,6 +183,7 @@
 		81A18E66351E9EB9BD73816BB59C80BB /* prepare.c in Sources */ = {isa = PBXBuildFile; fileRef = D4C36F3A831C09EAF01207E4739F6BF5 /* prepare.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		84923F9A7CACE019989EDAF4A74C0A2F /* memjournal.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E41FF34DBC3F06AB508FC621D0C289B /* memjournal.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		84B97C93AE3AA7BD13C8C634456639D5 /* sqlite3rtree.h in Headers */ = {isa = PBXBuildFile; fileRef = 17AC7798870D3FA0149EBD1493490B4A /* sqlite3rtree.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		85320E6FADE6CCE2E921391657A23B5A /* QPSmartBandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CC778484B04C57448CD85D6A2EB9B /* QPSmartBandManager.swift */; };
 		86C0905159E16C5459C5F68EAF9F5018 /* utf.c in Sources */ = {isa = PBXBuildFile; fileRef = C0C9522FB94576CF9E354AC056127923 /* utf.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		86D61ED9E92755CAA98639EF12E90D65 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77B5EF3FB540907F166B6C3045B54C /* Operators.swift */; };
 		87CDC46BEE1D00A5931BC7F19CBB71B1 /* opcodes.h in Headers */ = {isa = PBXBuildFile; fileRef = FFCA696EA81EF825C4D9B9754D1E2513 /* opcodes.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -200,7 +198,7 @@
 		89DFBCF43F6592B14A68793C93DEC444 /* HandlePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F492192C0B2965E25076936622AF4 /* HandlePool.swift */; };
 		8B1BDC1CCE237A665DFCCF95B52E4DA2 /* fts3_hash.h in Headers */ = {isa = PBXBuildFile; fileRef = EE890ED7D60E16F95E56A83692E8B84A /* fts3_hash.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8B3DDF1721EE815463FB3F51DD64E59C /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AD344A22D2024D59CD79228B59FF67 /* Lock.swift */; };
-		8C817291525F589B2D0C10F2DF38BA4E /* SevenModular-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B0C86B1F1A3E6BD8F81C3326C9232 /* SevenModular-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C817291525F589B2D0C10F2DF38BA4E /* SevenModular-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF606340B057FB0BCF48B28664B2AFEA /* SevenModular-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DA5B74F96053B88D81B4C81C4D42C64 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0CAF9722CE774E08FE201CE75E4E82 /* ToJSON.swift */; };
 		8DB74789D5460E84D6B2EB1799CF9A1E /* ColumnCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C221D9A8E8473FF5173B638467515 /* ColumnCodable.swift */; };
 		8F05C1E2891FCA212B67C976259E6783 /* pcache.c in Sources */ = {isa = PBXBuildFile; fileRef = 01AE56B95408E7C3AF853C91DCCDB4BD /* pcache.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -210,12 +208,13 @@
 		92208C0BC3989D7E938124CE9F987735 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC1C840C5B31109369470A960C21C1B /* Foundation.framework */; };
 		9342BE778EAD13FB97208AE412B11A67 /* os_setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 1136A20B05B65AD312C7738171A382E6 /* os_setup.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		948F50509BB364B8DE96370AA14E98E3 /* Recyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF509E6652A85DCB910F2D7E74D2EBE /* Recyclable.swift */; };
-		950A303110BB5CA47D466F2948850F47 /* QPSmartBandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9160C88ABFECD9739281FA697CAF8D8D /* QPSmartBandManager.swift */; };
+		94BB1F4FB405557D3A392C8E9759CB71 /* QPUTEWeatherIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B519D30395AA231500AC9270F2B21 /* QPUTEWeatherIndex.swift */; };
 		96DBFE11AAE27CA46A220B4FB06C355B /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61DE31CCF757BF139ACF1A43D424A78 /* IntegerOperators.swift */; };
 		984B4347DE8E4EA86D2D25D79A581481 /* sqliterk_column.c in Sources */ = {isa = PBXBuildFile; fileRef = C771884143C0F157DA1234014B5282B9 /* sqliterk_column.c */; };
 		9991830485E9C47F5A564A1F35E07193 /* VirtualTableBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90D0B681DCDAD0C02E649F6C9D3AE5D /* VirtualTableBinding.swift */; };
 		9A2E1EA1F0F8F4FA13589FEFC4D712B0 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3158DC09DB147A21355A366F29B825C /* HexColorTransform.swift */; };
 		9B5C85C33C0352747A9800AE0D1777AE /* icu.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C85240963FDE3E469E7870E6CE89929 /* icu.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9C387469010F4F10D37D488FFA064A04 /* UTEAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFACB487323BC7B4B92BF0E0C57C43 /* UTEAudioPlayer.swift */; };
 		9C646A7247D743C309B9B229D6B9E6D0 /* Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685255E0D206D0F40EC4F5DF2AEDB909 /* Handle.swift */; };
 		9D440CCCF5041C5C5CFFE6AF2D4E57E4 /* btmutex.c in Sources */ = {isa = PBXBuildFile; fileRef = C078C0C929782F641BFAFDED22122A91 /* btmutex.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9D4BB43226CEA8DC20B7AB56D493EA5F /* rtree.c in Sources */ = {isa = PBXBuildFile; fileRef = F63A81CD70E4CEE6DBA65C36A584F758 /* rtree.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -233,9 +232,9 @@
 		A6CCB242BE2FB304078BE34C994B4CBE /* os_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 30D836D06F25E355145277D7FC540930 /* os_unix.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A75C36A2E8D5D23D3EE20AE1780D4130 /* pcache1.c in Sources */ = {isa = PBXBuildFile; fileRef = 500305DACC648AB703E15A4B536B3780 /* pcache1.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A7A13E4F194424FAD8482A1C8B6E15F8 /* btree.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E5A9FA2A3149095DC2CFF20E6182A3 /* btree.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A8002D47D6AAA9DDEE691EEEFBC48E23 /* QPSmartWatchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97388F6404A04BCD4C38461DFE34113 /* QPSmartWatchData.swift */; };
 		AA9F451F92901C23F6A1891182306FEC /* os.h in Headers */ = {isa = PBXBuildFile; fileRef = FCFC0D9681319DA6AECDB4E85F10057F /* os.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AFBAA2F8A9B9A416EFA753CB907B9478 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED39E43892A74F7B0C5B908D04FE6CF6 /* Update.swift */; };
+		B02DC9E2BDD2EF40E1B20A02D1DE03C1 /* SevenModular-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A4D4538428B691D65A6C4080FFF855 /* SevenModular-dummy.m */; };
 		B157E19E5C94D4306EA3A13AD96A2BC6 /* vacuum.c in Sources */ = {isa = PBXBuildFile; fileRef = 66958DA0D01D4A1C3A3A89D7EC338434 /* vacuum.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B1DE03EC71FAD18F37B1F36C8D7FF681 /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F8F3DDC95A60090108454941E1B3B6 /* Delete.swift */; };
 		B23CDBAC2D0A3B94201D7C476B76E725 /* os.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B326AD879F051CCD90198EC57FCBFB9 /* os.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -253,7 +252,6 @@
 		BC25366E8F0BFC886B656F9FDBA4D615 /* printf.c in Sources */ = {isa = PBXBuildFile; fileRef = D56B445F35FE4CBDA02E7DF56E3BE656 /* printf.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BD071B0BE6A45C5427A93AFCBD932939 /* SQLiteRepairKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC55B59D7B11454AFC5CC7D2DF029A5 /* SQLiteRepairKit-dummy.m */; };
 		BDC7126D1834C536FE1EA4EFE560D8A1 /* ZIPFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F80CC605C60D4171C43AA198C6614B /* ZIPFoundation-dummy.m */; };
-		BE2E13977C93378675FD577BFD4A69A0 /* QPUTEModelDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EC6F2AA1614EB519D0C6B16406814 /* QPUTEModelDevices.swift */; };
 		BE77AF28ABBCD1A186B56195290331D8 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BFBC01AA20BDBDF4CD522DD830187 /* Mappable.swift */; };
 		BFE116DA52ED8DDC7D27474D974A367B /* Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3267F56DD6A44F9245AA8CD43E50F /* Select.swift */; };
 		C0BB036B563A2659FA065C6BA6E3D5A9 /* OrderTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E9C794BF0E6435D2EEAC92A26AA4F6 /* OrderTerm.swift */; };
@@ -274,7 +272,6 @@
 		CB7B3A35969F3A711D23F52FB52F26CE /* vtab.c in Sources */ = {isa = PBXBuildFile; fileRef = 13D661BC9473ABEEC1E16A706D4227D7 /* vtab.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CCA4536FCD0A134E4AAC0D369E0D863F /* wal.h in Headers */ = {isa = PBXBuildFile; fileRef = 89DE0E69736DD3F0F81E72DA6BE2662F /* wal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CCDCE509F80B682ADB432F62F367BCE2 /* sqliteicu.h in Headers */ = {isa = PBXBuildFile; fileRef = 88EA192A6AA768B13AE121C58EA44BDA /* sqliteicu.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CE843F213E2268C46D2AFB3CA0E1439B /* QPSedentaryRemind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80015852F43E841C942754C4CE200F64 /* QPSedentaryRemind.swift */; };
 		CF20769276B303BB41CBE9A0562052B4 /* Subquery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7339F3AA369A3BF2AAE6ADD2EB7BA /* Subquery.swift */; };
 		D0ABFE5CF1D0AA55F84E97953480019B /* sqliterk_btree.h in Headers */ = {isa = PBXBuildFile; fileRef = D2942266797493668102A4D2F4EA74D3 /* sqliterk_btree.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D0C4CC1AAC0DAC9810F498A8637E5AFA /* ThreadLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA2730E320B3A74D3299E0AD260DFB /* ThreadLocal.swift */; };
@@ -296,6 +293,7 @@
 		E1A6B7757B52119CCB8247D505A93E8E /* fts3_write.c in Sources */ = {isa = PBXBuildFile; fileRef = 4686D27F026D695D725E0045C4D7FA79 /* fts3_write.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E1CE9F1D88065199885F7EC698AAB2ED /* whereInt.h in Headers */ = {isa = PBXBuildFile; fileRef = CFDC2A2433FBE7577CBCD126CC3FD0FC /* whereInt.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E1F37D44CE35679E6FCAA04615C844BB /* Convertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C3BF673CBDA93F221600C24D0C70E /* Convertible.swift */; };
+		E360D5F54BF438CBE13C291D86CF353B /* QPUTERemind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464EABEBEF5A3182177F4075AFB03557 /* QPUTERemind.swift */; };
 		E393D1EC51658B10234895EA1AD59F29 /* StatementReindex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A98C56A1E0C4A653FD0B009F41F3CA1 /* StatementReindex.swift */; };
 		E3FC8F41ED716F23DFCE8E6AB9AB66E9 /* callback.c in Sources */ = {isa = PBXBuildFile; fileRef = D3B01422E1C9762FF7BFFAA2711A9096 /* callback.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E4A868B6F934D0E59F3AAF52C9F555B8 /* Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7993F3A82D4BA14F258618CCC0DFBC12 /* Insert.swift */; };
@@ -313,8 +311,8 @@
 		EDB5CDF22EAE240E83FCE76F166523D7 /* backup.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AA4965986374F1EB9477A7D4CC8BE3 /* backup.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EE5414F8F95AB6B7476F6DA0FFE8ACFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAE85DB0E3705A36D6545B218A883CA /* UIKit.framework */; };
 		EEBC80FEAD4FA767AADBA35A0DADCAFF /* HandleStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21243723E24E32F7B248DF4D16BBC2 /* HandleStatement.swift */; };
+		EF9B5ACF3E718180F1FE3D730750F9E3 /* QPUTEDateManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D0E3548700291118B37633C2C760A /* QPUTEDateManage.swift */; };
 		F000D6CA12F7C477EC63335B91707775 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3ADC396CC695D8973B20A3092FC2C4 /* URLTransform.swift */; };
-		F027A6F252ECEB53B2645BD8CC1F31CB /* QPUTEAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329B87CD771794374F6FFB2745641D8 /* QPUTEAlarm.swift */; };
 		F0D30CCA5F40084FFCD0497BAFBA3D1F /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C340888F29EDA9611AEC3D3BF26A0C /* Interface.swift */; };
 		F1924F028BB9935C17DB1AFF983F07C9 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = C765931F5FE250C4C88B174E2CF8F858 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2CA9FD6E3A7EFBB13BCEF662D06524B /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC00B608092CE231E198454BBCD04A4 /* CustomDateFormatTransform.swift */; };
@@ -325,6 +323,7 @@
 		F602A98D5180B9BFC3DF4E42A12D606C /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D7164194CCC1E8D1844DE53D2E2E39 /* Column.swift */; };
 		F60975556A37AD5647ED82DC76E9CF6F /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F377CF85B0055B3C69D6CF1E9A32CFD /* DateFormatterTransform.swift */; };
 		F711A6A78CAA989C206FF23DDFC2AF0F /* Pods-SevenModular_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE306D57676FCD76CDC756FE2861F79B /* Pods-SevenModular_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F746C55B954777156ED055B04366821B /* QPUTEAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBE925740C3B9B8E4EF9CA4EF82A582 /* QPUTEAlarm.swift */; };
 		F75B82BB30F46BD2600F9FC98F3165F1 /* vdbe.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C95206F7E766AA44E51B3A817470B81 /* vdbe.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F825AD0F06397A59DEA7991687940F8D /* ModuleArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA5CD9169ECD1672490E8478755347 /* ModuleArgument.swift */; };
 		F8CF77DB355033CF36B1415CC287B916 /* SQLiteRepairKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D58B4195AB64F6619EDF16E18F157D /* SQLiteRepairKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -335,6 +334,7 @@
 		FB7AFA3F2C6A85300DB799135867694A /* sqliterk_pager.c in Sources */ = {isa = PBXBuildFile; fileRef = E60B8DC0598BB295CB1A0F82D229802E /* sqliterk_pager.c */; };
 		FC648A7322BAC103A043F661DB4769B7 /* sqliterk_values.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DB850423C51CE59A636F24AE6C1A261 /* sqliterk_values.c */; };
 		FC65A25E4DFFE215656DC96B1CB450C7 /* ColumnDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264481D4138E6FE298EE061F9245175 /* ColumnDef.swift */; };
+		FE9D07FEC61F629DD607D89B500354FE /* SEUTEDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E81016100698EDB6BC2C89E43F3030 /* SEUTEDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -432,11 +432,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		009FE4910319669BB639EDB2DAF99A3D /* UTESmartBandApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTESmartBandApi.framework; path = SevenModular/Classes/UTESmartBandApi.framework; sourceTree = "<group>"; };
 		00A85339DCB1E05C2DF366B69128D615 /* parse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = parse.h; sourceTree = "<group>"; };
 		01AE56B95408E7C3AF853C91DCCDB4BD /* pcache.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pcache.c; path = src/pcache.c; sourceTree = "<group>"; };
 		0286EEEAA89C86394B007F94BB9D18C1 /* StatementPragma.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementPragma.swift; path = swift/source/abstract/StatementPragma.swift; sourceTree = "<group>"; };
 		03D0C00C84340D906B80242EBCE4AF97 /* fts3_snippet.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fts3_snippet.c; path = ext/fts3/fts3_snippet.c; sourceTree = "<group>"; };
 		0429AC1783555907B18AE2BF94D8597A /* mutex_noop.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mutex_noop.c; path = src/mutex_noop.c; sourceTree = "<group>"; };
+		055CC778484B04C57448CD85D6A2EB9B /* QPSmartBandManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPSmartBandManager.swift; path = SevenModular/Classes/QPSmartBandManager.swift; sourceTree = "<group>"; };
 		086B733D442122879233CBA96994D384 /* crypto.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypto.c; path = src/crypto.c; sourceTree = "<group>"; };
 		0CA1B0D6B8E438C9FA499A097A20612F /* sqliterk_column.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqliterk_column.h; path = repair/sqliterk_column.h; sourceTree = "<group>"; };
 		0CCCE6522A5B7605B9B3B239CC6885A3 /* WCDB.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCDB.swift-umbrella.h"; sourceTree = "<group>"; };
@@ -456,13 +458,12 @@
 		1377B6DF46A0C30953D82B9FC579837D /* ZIPFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZIPFoundation-Info.plist"; sourceTree = "<group>"; };
 		13D661BC9473ABEEC1E16A706D4227D7 /* vtab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vtab.c; path = src/vtab.c; sourceTree = "<group>"; };
 		14106E873BE56892514439D96D21FEDF /* IndexBinding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndexBinding.swift; path = swift/source/core/binding/IndexBinding.swift; sourceTree = "<group>"; };
-		14E02C784857C46B3247915167D6F61C /* WatchDataIndex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WatchDataIndex.swift; path = SevenModular/Classes/WatchDataIndex.swift; sourceTree = "<group>"; };
 		1525EAEB004CE08F2DC5D1FE0F84EC09 /* Operable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operable.swift; path = swift/source/abstract/Operable.swift; sourceTree = "<group>"; };
 		156270001BFDEBDCFC2E424A241E2BD3 /* SQLite-Bridging.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "SQLite-Bridging.c"; path = "swift/source/util/SQLite-Bridging.c"; sourceTree = "<group>"; };
+		158EF6DBD9D253739414B57ADEC9BF22 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		15C7E763B85995BEB672078EB5AB40B1 /* Pods-SevenModular_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SevenModular_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1689DD8920CB9217A5A19697CDBC935D /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
 		17AC7798870D3FA0149EBD1493490B4A /* sqlite3rtree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3rtree.h; path = ext/rtree/sqlite3rtree.h; sourceTree = "<group>"; };
-		181B0C86B1F1A3E6BD8F81C3326C9232 /* SevenModular-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SevenModular-umbrella.h"; sourceTree = "<group>"; };
 		1919AC0C9BFE5FC2BADC3ED390CBA005 /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
 		1A04D00B703106E56B67CD39EA3B6E07 /* ZIPFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZIPFoundation.modulemap; sourceTree = "<group>"; };
 		1AB0C7B904C042C913E594E1898F3453 /* Master.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Master.swift; path = swift/source/builtin/Master.swift; sourceTree = "<group>"; };
@@ -473,6 +474,7 @@
 		1F654048DC4839F87A09B270D46DA872 /* sqlcipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = sqlcipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		200F6AC8349B4B544460BFE8F0A31F6C /* os_wcdb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = os_wcdb.c; path = src/os_wcdb.c; sourceTree = "<group>"; };
 		2383229962025084914FB2C786409AFC /* CoreStatement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStatement.swift; path = swift/source/core/base/CoreStatement.swift; sourceTree = "<group>"; };
+		23A4D4538428B691D65A6C4080FFF855 /* SevenModular-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SevenModular-dummy.m"; sourceTree = "<group>"; };
 		2592BC3918588890071E6911D098185B /* util.c */ = {isa = PBXFileReference; includeInIndex = 1; name = util.c; path = src/util.c; sourceTree = "<group>"; };
 		25E4A9DC5DC63CF5057841FC34D115DE /* SQLiteRepairKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLiteRepairKit.modulemap; sourceTree = "<group>"; };
 		260E96EE60441E7B7638A11E4071FFA2 /* auth.c */ = {isa = PBXFileReference; includeInIndex = 1; name = auth.c; path = src/auth.c; sourceTree = "<group>"; };
@@ -481,7 +483,6 @@
 		27A3B87E35FAB2C128A4833D1B2FE477 /* sqlite3userauth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3userauth.h; path = ext/userauth/sqlite3userauth.h; sourceTree = "<group>"; };
 		27CB38B7CFF3E01C078F794A09B30753 /* Pods-SevenModular_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SevenModular_Example-dummy.m"; sourceTree = "<group>"; };
 		2823F71188FE54C92E261C1F7A1F9E0C /* StatementTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementTransaction.swift; path = swift/source/abstract/StatementTransaction.swift; sourceTree = "<group>"; };
-		29063F6AEDAC509AB74472FEB5BA794F /* QPUTEWeatherIndex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPUTEWeatherIndex.swift; path = SevenModular/Classes/QPUTEWeatherIndex.swift; sourceTree = "<group>"; };
 		29FE91DEA3D16A4BC4637809E2BFB0E0 /* SQLiteRepairKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLiteRepairKit.release.xcconfig; sourceTree = "<group>"; };
 		2A6C4C665715577C1CFD92F95E733DBC /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
 		2ABCF14F68BFB2F158128ED8ACB55CCB /* pcache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pcache.h; path = src/pcache.h; sourceTree = "<group>"; };
@@ -490,6 +491,7 @@
 		2B78E11C6317FFBE87F792960B64AA63 /* queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = queue.h; path = src/queue.h; sourceTree = "<group>"; };
 		2C95206F7E766AA44E51B3A817470B81 /* vdbe.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vdbe.c; path = src/vdbe.c; sourceTree = "<group>"; };
 		2CE543EB664FD6B14AF680B27233BB34 /* ObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.debug.xcconfig; sourceTree = "<group>"; };
+		2E691FA6C19E0D72CC65E7FE4063FD7D /* SevenModular.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SevenModular.modulemap; sourceTree = "<group>"; };
 		2F32F373209ECE4DBD8AEB8D8D74DF8D /* Pods-SevenModular_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SevenModular_Tests-Info.plist"; sourceTree = "<group>"; };
 		30D836D06F25E355145277D7FC540930 /* os_unix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = os_unix.c; path = src/os_unix.c; sourceTree = "<group>"; };
 		30FA629CE3EDC87EBF651578802129B0 /* fts3_tokenizer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fts3_tokenizer.c; path = ext/fts3/fts3_tokenizer.c; sourceTree = "<group>"; };
@@ -511,25 +513,24 @@
 		3C85240963FDE3E469E7870E6CE89929 /* icu.c */ = {isa = PBXFileReference; includeInIndex = 1; name = icu.c; path = ext/icu/icu.c; sourceTree = "<group>"; };
 		3CA57F47E348EDBC339321B94AF67F0B /* build.c */ = {isa = PBXFileReference; includeInIndex = 1; name = build.c; path = src/build.c; sourceTree = "<group>"; };
 		3D3F0644242A02D769973ED0933A15C6 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = swift/source/core/base/Config.swift; sourceTree = "<group>"; };
-		3DA3F9AC84100547E45A52EB8C211C48 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3DB850423C51CE59A636F24AE6C1A261 /* sqliterk_values.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sqliterk_values.c; path = repair/sqliterk_values.c; sourceTree = "<group>"; };
 		3EA3147730DBBF6B49CCD10FEC8FC787 /* Pragma.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pragma.swift; path = swift/source/abstract/Pragma.swift; sourceTree = "<group>"; };
 		3EF0C9087FBD657953612177F92E6912 /* ObjectMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.release.xcconfig; sourceTree = "<group>"; };
 		3F41C0C7A95795BF552AA1A6F29E3DC5 /* SQLite-Bridging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SQLite-Bridging.swift"; path = "swift/source/util/SQLite-Bridging.swift"; sourceTree = "<group>"; };
+		3F5D0E3548700291118B37633C2C760A /* QPUTEDateManage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPUTEDateManage.swift; path = SevenModular/Classes/QPUTEDateManage.swift; sourceTree = "<group>"; };
 		3FFB378DC3D964D72B4F302886D38E26 /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = src/crypto.h; sourceTree = "<group>"; };
 		401D7472FDF2B44181063EFF1A4ED3C4 /* StatementAttach.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementAttach.swift; path = swift/source/abstract/StatementAttach.swift; sourceTree = "<group>"; };
 		402A80FCFAEB290601756A0BD706EB9F /* alter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = alter.c; path = src/alter.c; sourceTree = "<group>"; };
-		405065F0BF4C66B272FF3A4DF1B46AF6 /* QPUTERemind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPUTERemind.swift; path = SevenModular/Classes/QPUTERemind.swift; sourceTree = "<group>"; };
 		4178F58FBD66DC4C895D3F5789C50406 /* Data+Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Compression.swift"; path = "Sources/ZIPFoundation/Data+Compression.swift"; sourceTree = "<group>"; };
 		41BA5CD9169ECD1672490E8478755347 /* ModuleArgument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleArgument.swift; path = swift/source/abstract/ModuleArgument.swift; sourceTree = "<group>"; };
 		44063D84E6953E74B2BDDEDC02043DAE /* WCDBSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCDBSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		455C56EE773A26A88E62C9C4799BA1DF /* SQLiteRepairKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLiteRepairKit.debug.xcconfig; sourceTree = "<group>"; };
 		45B47E9B66B77C8097AF18D8E8EE4FD6 /* SQLiteRepairKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SQLiteRepairKit-Info.plist"; sourceTree = "<group>"; };
+		464EABEBEF5A3182177F4075AFB03557 /* QPUTERemind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPUTERemind.swift; path = SevenModular/Classes/QPUTERemind.swift; sourceTree = "<group>"; };
 		4686D27F026D695D725E0045C4D7FA79 /* fts3_write.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fts3_write.c; path = ext/fts3/fts3_write.c; sourceTree = "<group>"; };
 		46D58B4195AB64F6619EDF16E18F157D /* SQLiteRepairKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLiteRepairKit.h; path = repair/SQLiteRepairKit.h; sourceTree = "<group>"; };
 		47439761AE4C6DAB4BD071A4BD7BD51A /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
 		483498CAF0E8349591DC8DC877CFAFE0 /* sqliterk_pager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqliterk_pager.h; path = repair/sqliterk_pager.h; sourceTree = "<group>"; };
-		487203AFE459F33092EB64C71D2B344D /* SevenModular.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SevenModular.modulemap; sourceTree = "<group>"; };
 		487E722E86B02D3B5B7939506BACBE0C /* crypto_impl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypto_impl.c; path = src/crypto_impl.c; sourceTree = "<group>"; };
 		4898167520A82AAA2AFF8740BE1A50F7 /* vdbeblob.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vdbeblob.c; path = src/vdbeblob.c; sourceTree = "<group>"; };
 		48A4A6EDC08C8AC933D0DCD507E9D173 /* ZIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZIPFoundation.framework; path = ZIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -560,13 +561,12 @@
 		5D996C15A849FFCA0550F4C1307D50B4 /* treeview.c */ = {isa = PBXFileReference; includeInIndex = 1; name = treeview.c; path = src/treeview.c; sourceTree = "<group>"; };
 		5DCCF5B5F792D4EC76585F50AC7D8D7B /* sqliterk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = sqliterk.framework; path = SQLiteRepairKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFCF1C2F57EB3A40A7D4580176CD6F1 /* StatementDelete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementDelete.swift; path = swift/source/abstract/StatementDelete.swift; sourceTree = "<group>"; };
-		6171BE90625E7C1E1A9F87953A1573CF /* SevenModular-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SevenModular-dummy.m"; sourceTree = "<group>"; };
 		618458A6ACE0531FF1BF0957C9F257C8 /* File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = File.swift; path = swift/source/util/File.swift; sourceTree = "<group>"; };
+		632DBCF2B9E2A39CB65E45257AEB2399 /* QPUTEModelDevices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPUTEModelDevices.swift; path = SevenModular/Classes/QPUTEModelDevices.swift; sourceTree = "<group>"; };
 		633973B289DE225993C6EAA94C3710F9 /* Pods-SevenModular_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SevenModular_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		63A99E941ADF2C0055EF55CE0DEDB058 /* keywordhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = keywordhash.h; sourceTree = "<group>"; };
 		646B1A18CE9CCBE2B0488644EE1B9385 /* rowset.c */ = {isa = PBXFileReference; includeInIndex = 1; name = rowset.c; path = src/rowset.c; sourceTree = "<group>"; };
 		64E0C6524470301B2892665164E3C2A6 /* fts3_tokenizer1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fts3_tokenizer1.c; path = ext/fts3/fts3_tokenizer1.c; sourceTree = "<group>"; };
-		65DA94EEA10CAE939CE4910B05772704 /* SevenModular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SevenModular.debug.xcconfig; sourceTree = "<group>"; };
 		66958DA0D01D4A1C3A3A89D7EC338434 /* vacuum.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vacuum.c; path = src/vacuum.c; sourceTree = "<group>"; };
 		66B3EECB3014DE001002648CF91D8FB8 /* Tracer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tracer.swift; path = swift/source/abstract/Tracer.swift; sourceTree = "<group>"; };
 		66F48CCFCEB88F2EA3F2F5A9A4E84905 /* Database.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Database.swift; path = swift/source/core/base/Database.swift; sourceTree = "<group>"; };
@@ -580,7 +580,6 @@
 		6C3048107B3E492C248E8BC76331C517 /* TableEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableEncoder.swift; path = swift/source/core/codable/TableEncoder.swift; sourceTree = "<group>"; };
 		6D21243723E24E32F7B248DF4D16BBC2 /* HandleStatement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HandleStatement.swift; path = swift/source/abstract/HandleStatement.swift; sourceTree = "<group>"; };
 		6DDFE49E3363D9FA9A111327EB020390 /* sqlite3rbu.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sqlite3rbu.c; path = ext/rbu/sqlite3rbu.c; sourceTree = "<group>"; };
-		6DE5A4A55475703E8BB7D400E6952544 /* QPUTEBrightScreenTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPUTEBrightScreenTime.swift; path = SevenModular/Classes/QPUTEBrightScreenTime.swift; sourceTree = "<group>"; };
 		6E2F2A86E013785E8C2CB1A694FC952E /* WCDBOptimizedSQLCipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCDBOptimizedSQLCipher-umbrella.h"; sourceTree = "<group>"; };
 		70DDFA3762A2606350FEF60FF2D2A2D7 /* notify.c */ = {isa = PBXFileReference; includeInIndex = 1; name = notify.c; path = src/notify.c; sourceTree = "<group>"; };
 		71702459BD55B423A57F6A42E41A0C51 /* sqliteLimit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqliteLimit.h; path = src/sqliteLimit.h; sourceTree = "<group>"; };
@@ -597,10 +596,8 @@
 		7BC55B59D7B11454AFC5CC7D2DF029A5 /* SQLiteRepairKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLiteRepairKit-dummy.m"; sourceTree = "<group>"; };
 		7CD8A34CDE0A6EE8FACE6DCEC3373783 /* CommonStatement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommonStatement.swift; path = swift/source/builtin/CommonStatement.swift; sourceTree = "<group>"; };
 		7DAE85DB0E3705A36D6545B218A883CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		7DF1D929DFA32A39539D15A9106B40B6 /* UTEAudioPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UTEAudioPlayer.swift; path = SevenModular/Classes/UTEAudioPlayer.swift; sourceTree = "<group>"; };
-		7E7EC6F2AA1614EB519D0C6B16406814 /* QPUTEModelDevices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPUTEModelDevices.swift; path = SevenModular/Classes/QPUTEModelDevices.swift; sourceTree = "<group>"; };
+		7F332E226F622EEB6E1CA5BF9861A6F9 /* SevenModular-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SevenModular-prefix.pch"; sourceTree = "<group>"; };
 		7F4D5729C148B4409B3824EDD2EDEE19 /* sqliterk_values.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqliterk_values.h; path = repair/sqliterk_values.h; sourceTree = "<group>"; };
-		80015852F43E841C942754C4CE200F64 /* QPSedentaryRemind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPSedentaryRemind.swift; path = SevenModular/Classes/QPSedentaryRemind.swift; sourceTree = "<group>"; };
 		824A9A6930C214C5C3BFA8BF34A620C6 /* Archive+Writing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Writing.swift"; path = "Sources/ZIPFoundation/Archive+Writing.swift"; sourceTree = "<group>"; };
 		83615A714BB891A84D7CC92AAB10B5FA /* random.c */ = {isa = PBXFileReference; includeInIndex = 1; name = random.c; path = src/random.c; sourceTree = "<group>"; };
 		8422EBF0310347FC8108746F462E8F62 /* sqliterk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqliterk.h; path = repair/sqliterk.h; sourceTree = "<group>"; };
@@ -618,17 +615,21 @@
 		8A4D7705F2B3F36B5B65D004A00D6436 /* Pods_SevenModular_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SevenModular_Tests.framework; path = "Pods-SevenModular_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A98C56A1E0C4A653FD0B009F41F3CA1 /* StatementReindex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementReindex.swift; path = swift/source/abstract/StatementReindex.swift; sourceTree = "<group>"; };
 		8AF509E6652A85DCB910F2D7E74D2EBE /* Recyclable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Recyclable.swift; path = swift/source/util/Recyclable.swift; sourceTree = "<group>"; };
+		8C25EB9F61D9652F8E7B17738D493AFE /* SevenModular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SevenModular.release.xcconfig; sourceTree = "<group>"; };
+		8C2D149005D96199C588DDED95B191D7 /* QPSedentaryRemind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPSedentaryRemind.swift; path = SevenModular/Classes/QPSedentaryRemind.swift; sourceTree = "<group>"; };
+		8C8B519D30395AA231500AC9270F2B21 /* QPUTEWeatherIndex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPUTEWeatherIndex.swift; path = SevenModular/Classes/QPUTEWeatherIndex.swift; sourceTree = "<group>"; };
 		8E2B303936D53C38C614ED923A9A6938 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EADA4D264AAD07EB9CEBFA056DAC91D /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = swift/source/abstract/Expression.swift; sourceTree = "<group>"; };
 		90B336115A8A9F3ACC166FCFFCAFB532 /* sqliteInt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqliteInt.h; path = src/sqliteInt.h; sourceTree = "<group>"; };
 		9138460478DFCF4C9C36858A5934BE8F /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
-		9160C88ABFECD9739281FA697CAF8D8D /* QPSmartBandManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPSmartBandManager.swift; path = SevenModular/Classes/QPSmartBandManager.swift; sourceTree = "<group>"; };
 		918E2D527A9DFC8AE02396E4D5EDB357 /* Pods-SevenModular_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SevenModular_Example.modulemap"; sourceTree = "<group>"; };
 		91F47168471E59F1511B9028496EA526 /* WCDBOptimizedSQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WCDBOptimizedSQLCipher-dummy.m"; sourceTree = "<group>"; };
 		92A7339F3AA369A3BF2AAE6ADD2EB7BA /* Subquery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Subquery.swift; path = swift/source/abstract/Subquery.swift; sourceTree = "<group>"; };
 		92B76C4140439842326B1D0B6AB22A52 /* StatementSelect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementSelect.swift; path = swift/source/abstract/StatementSelect.swift; sourceTree = "<group>"; };
 		93290D31B8FC003A64DF07B35DEA8D6E /* Convenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Convenience.swift; path = swift/source/util/Convenience.swift; sourceTree = "<group>"; };
 		93E3BB8A77166AA679E56390BB5C6428 /* opcodes.c */ = {isa = PBXFileReference; includeInIndex = 1; path = opcodes.c; sourceTree = "<group>"; };
+		94FFACB487323BC7B4B92BF0E0C57C43 /* UTEAudioPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UTEAudioPlayer.swift; path = SevenModular/Classes/UTEAudioPlayer.swift; sourceTree = "<group>"; };
+		960E905C7D803D277DF9C5FDB8F5F18A /* QPSmartWatchData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPSmartWatchData.swift; path = SevenModular/Classes/QPSmartWatchData.swift; sourceTree = "<group>"; };
 		96BFF08DF217A933F174C0DEC2F72361 /* Archive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Archive.swift; path = Sources/ZIPFoundation/Archive.swift; sourceTree = "<group>"; };
 		96C2812CA631E65009090F61019116BA /* Pods-SevenModular_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SevenModular_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		972B4252EEC3E7FE69C638384B3AE47D /* ZIPFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIPFoundation-prefix.pch"; sourceTree = "<group>"; };
@@ -637,12 +638,10 @@
 		97D0BC8BAC629498495CEE4FFF254424 /* Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Core.swift; path = swift/source/core/base/Core.swift; sourceTree = "<group>"; };
 		97F46989BC7DE1D0AFA8BD36173000FC /* TimedQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimedQueue.swift; path = swift/source/util/TimedQueue.swift; sourceTree = "<group>"; };
 		98EBD15EA28DA944C23E0F723478F1E5 /* ChainCall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChainCall.swift; path = swift/source/core/interface/ChainCall.swift; sourceTree = "<group>"; };
-		99390114FC450E3AFB0D1B1225B68C78 /* SevenModular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SevenModular.release.xcconfig; sourceTree = "<group>"; };
 		9986F3375F675ADAA2F3F55A6CC8C216 /* WCDB.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WCDB.swift-Info.plist"; sourceTree = "<group>"; };
 		9A01106E31E7DB23B92A3A08884F3235 /* ctime.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ctime.c; path = src/ctime.c; sourceTree = "<group>"; };
 		9A6E60F99A07825F7ADF3B837DAE6AD0 /* StatementVacuum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementVacuum.swift; path = swift/source/abstract/StatementVacuum.swift; sourceTree = "<group>"; };
 		9A6E958654A6C2A581106389170FEB2B /* sqliterk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = sqliterk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A7CDA49C6D9EC26817D7FC82BF49F66 /* UTESmartBandApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTESmartBandApi.framework; path = SevenModular/Classes/UTESmartBandApi.framework; sourceTree = "<group>"; };
 		9AA1B55117234D2A0C12247DE182E9FC /* sqliterk_btree.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sqliterk_btree.c; path = repair/sqliterk_btree.c; sourceTree = "<group>"; };
 		9B80879F6F886C8099429F918D9ECF97 /* Declare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Declare.swift; path = swift/source/core/interface/Declare.swift; sourceTree = "<group>"; };
 		9BA68B92AC945D9D1579DE5324926FE0 /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
@@ -658,11 +657,10 @@
 		9E4A9789B1F5C910078865C58DE3E614 /* LiteralValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiteralValue.swift; path = swift/source/abstract/LiteralValue.swift; sourceTree = "<group>"; };
 		9EFD046AEF31CFF7C81CF35711B922A7 /* vdbetrace.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vdbetrace.c; path = src/vdbetrace.c; sourceTree = "<group>"; };
 		A0A99C8564DB6BF25FABCD65D5FFA86F /* Pods-SevenModular_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SevenModular_Tests.modulemap"; sourceTree = "<group>"; };
-		A15A02B9E129C972A7BC09630B0D934A /* SevenModular-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SevenModular-prefix.pch"; sourceTree = "<group>"; };
-		A209721EACF9B96D6778C8722100E3E9 /* SevenModular-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SevenModular-Info.plist"; sourceTree = "<group>"; };
 		A2C88425DA683CC596213FA7DDF145C7 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "swift/source/util/SQLite-Bridging.h"; sourceTree = "<group>"; };
 		A39BF437F17D4C707C584AEE74E4A3D9 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = swift/source/util/Optional.swift; sourceTree = "<group>"; };
 		A3B3267F56DD6A44F9245AA8CD43E50F /* Select.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Select.swift; path = swift/source/core/interface/Select.swift; sourceTree = "<group>"; };
+		A3C51A3E04974BCA2171B856D59619A8 /* SevenModular-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SevenModular-Info.plist"; sourceTree = "<group>"; };
 		A4253C9CF709A5BF954CF988FB655884 /* mutex_wcdb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mutex_wcdb.h; path = src/mutex_wcdb.h; sourceTree = "<group>"; };
 		A53CCCBA61F308E770511F2FBC1FA141 /* SevenModular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SevenModular.framework; path = SevenModular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57C6B849E593EDCD3E461736FE6C66A /* func.c */ = {isa = PBXFileReference; includeInIndex = 1; name = func.c; path = src/func.c; sourceTree = "<group>"; };
@@ -672,7 +670,6 @@
 		A7F0C8075CDD48D70435EA39ACA4B8AB /* table.c */ = {isa = PBXFileReference; includeInIndex = 1; name = table.c; path = src/table.c; sourceTree = "<group>"; };
 		A8A124EE51385C637BCC0767665505E7 /* mem2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mem2.c; path = src/mem2.c; sourceTree = "<group>"; };
 		A8E82B16ED69C878F1DFB6216B2C4F9E /* ZIPFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZIPFoundation.debug.xcconfig; sourceTree = "<group>"; };
-		AB24909350CD94AB441CF86527F550D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		ACA33AB953D189741B4284475F0D2CF8 /* vdbeaux.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vdbeaux.c; path = src/vdbeaux.c; sourceTree = "<group>"; };
 		AD52B486307F8A4C6A1CEE534D4FB691 /* insert.c */ = {isa = PBXFileReference; includeInIndex = 1; name = insert.c; path = src/insert.c; sourceTree = "<group>"; };
 		AD8781B8E491831B7ED6C77E69ED6895 /* update.c */ = {isa = PBXFileReference; includeInIndex = 1; name = update.c; path = src/update.c; sourceTree = "<group>"; };
@@ -708,6 +705,7 @@
 		BE7B12ACCA3A3108E045469B890E23DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		BEE3011C9C80CF3834094F4A8496BDBF /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
 		BF3B9FF2FACD342BAB42C79FA7D3BCAF /* StatementDetach.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementDetach.swift; path = swift/source/abstract/StatementDetach.swift; sourceTree = "<group>"; };
+		BF606340B057FB0BCF48B28664B2AFEA /* SevenModular-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SevenModular-umbrella.h"; sourceTree = "<group>"; };
 		BF80C8411269148FB85271A32157B3C8 /* RecyclableCore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecyclableCore.swift; path = swift/source/core/base/RecyclableCore.swift; sourceTree = "<group>"; };
 		BFD068AD8D83C523B5758D1130994F52 /* resolve.c */ = {isa = PBXFileReference; includeInIndex = 1; name = resolve.c; path = src/resolve.c; sourceTree = "<group>"; };
 		C078C0C929782F641BFAFDED22122A91 /* btmutex.c */ = {isa = PBXFileReference; includeInIndex = 1; name = btmutex.c; path = src/btmutex.c; sourceTree = "<group>"; };
@@ -728,6 +726,7 @@
 		C9E9C794BF0E6435D2EEAC92A26AA4F6 /* OrderTerm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderTerm.swift; path = swift/source/abstract/OrderTerm.swift; sourceTree = "<group>"; };
 		CC7D1FC70272463DCEC91B8DD75DF463 /* crypto_cc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypto_cc.c; path = src/crypto_cc.c; sourceTree = "<group>"; };
 		CCE7C35FCA9276646CA52F22687784C3 /* StatementAlterTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementAlterTable.swift; path = swift/source/abstract/StatementAlterTable.swift; sourceTree = "<group>"; };
+		CD3E62DD883E7A2DE3CF9A9536F44377 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		CE72FD5CE45A4939D54423C96553C4C8 /* Entry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = Sources/ZIPFoundation/Entry.swift; sourceTree = "<group>"; };
 		CF0CAF9722CE774E08FE201CE75E4E82 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
 		CF8DCD24F0B56A535DA3941BCBC86557 /* queue.c */ = {isa = PBXFileReference; includeInIndex = 1; name = queue.c; path = src/queue.c; sourceTree = "<group>"; };
@@ -754,8 +753,6 @@
 		D652A49E09F0FA6DBFA8BE3F074B43F4 /* pragma.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pragma.c; path = src/pragma.c; sourceTree = "<group>"; };
 		D654FC0F24E6D23207FA225E60F781A9 /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
 		D6AA4965986374F1EB9477A7D4CC8BE3 /* backup.c */ = {isa = PBXFileReference; includeInIndex = 1; name = backup.c; path = src/backup.c; sourceTree = "<group>"; };
-		D95247EDB8B0E3C4C9B2E126196E1F0D /* SevenModular.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SevenModular.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D97388F6404A04BCD4C38461DFE34113 /* QPSmartWatchData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPSmartWatchData.swift; path = SevenModular/Classes/QPSmartWatchData.swift; sourceTree = "<group>"; };
 		D976F12DB286DD12C4464537244B3671 /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
 		D9D7164194CCC1E8D1844DE53D2E2E39 /* Column.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Column.swift; path = swift/source/abstract/Column.swift; sourceTree = "<group>"; };
 		DEAA9D942E3D71BD5E02A8A0DB10E824 /* dbstat.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dbstat.c; path = src/dbstat.c; sourceTree = "<group>"; };
@@ -763,7 +760,6 @@
 		E0F73F61B31067B8D66F27BCF942C3C0 /* CodableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableType.swift; path = swift/source/builtin/CodableType.swift; sourceTree = "<group>"; };
 		E1D63D9179AA6F4F164A53BCAD489C73 /* fts3_icu.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fts3_icu.c; path = ext/fts3/fts3_icu.c; sourceTree = "<group>"; };
 		E3158DC09DB147A21355A366F29B825C /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
-		E329B87CD771794374F6FFB2745641D8 /* QPUTEAlarm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPUTEAlarm.swift; path = SevenModular/Classes/QPUTEAlarm.swift; sourceTree = "<group>"; };
 		E39B533ED06E0FCFF2A4674382A098AE /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
 		E3F80CC605C60D4171C43AA198C6614B /* ZIPFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZIPFoundation-dummy.m"; sourceTree = "<group>"; };
 		E582A145A8909C07A97212B7A177AB44 /* ConcurrentList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConcurrentList.swift; path = swift/source/util/ConcurrentList.swift; sourceTree = "<group>"; };
@@ -771,6 +767,7 @@
 		E60B8DC0598BB295CB1A0F82D229802E /* sqliterk_pager.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sqliterk_pager.c; path = repair/sqliterk_pager.c; sourceTree = "<group>"; };
 		E75CBF86F55EC4D714451D6403F4699D /* Pods-SevenModular_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SevenModular_Example-Info.plist"; sourceTree = "<group>"; };
 		E8A4D836D5B7E5BFAE9F771561051DC5 /* sqliterk_os.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sqliterk_os.c; path = repair/sqliterk_os.c; sourceTree = "<group>"; };
+		E8F4F9D987EC18B7795759A5A3F7D627 /* SevenModular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SevenModular.debug.xcconfig; sourceTree = "<group>"; };
 		E9022D2E456E7D1B731A79AA4B2E6FFA /* legacy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = legacy.c; path = src/legacy.c; sourceTree = "<group>"; };
 		E9485C7406CE7601CEC3A46E62D8768A /* fts3_hash.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fts3_hash.c; path = ext/fts3/fts3_hash.c; sourceTree = "<group>"; };
 		E99639E9EA2E027A8DC8605362DB773C /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
@@ -785,13 +782,15 @@
 		EF4BB9099D660AB9C25D46852EF5759D /* WCDBOptimizedSQLCipher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WCDBOptimizedSQLCipher-Info.plist"; sourceTree = "<group>"; };
 		EF6DB89D5AECD92C3DA7F9425000C00C /* MultiSelect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiSelect.swift; path = swift/source/core/interface/MultiSelect.swift; sourceTree = "<group>"; };
 		EFEEB26EE0D3A1CA698F6ED39CAD8EAF /* sqliterk_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqliterk_util.h; path = repair/sqliterk_util.h; sourceTree = "<group>"; };
+		F003EB15EC878A059204FCC91B1BE39A /* SevenModular.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SevenModular.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F0BA9D5648C0B3AF550748F6A02EA500 /* QPUTEBrightScreenTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPUTEBrightScreenTime.swift; path = SevenModular/Classes/QPUTEBrightScreenTime.swift; sourceTree = "<group>"; };
 		F156ED897D0CD1B6F6912BFB41F00E70 /* ColumnTypeDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColumnTypeDecoder.swift; path = swift/source/core/codable/ColumnTypeDecoder.swift; sourceTree = "<group>"; };
-		F17CDFE2108F02A339D16131CEDA649C /* SEUTEDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SEUTEDatabase.swift; path = SevenModular/Classes/SEUTEDatabase.swift; sourceTree = "<group>"; };
 		F2F8EA51AB1F1BCA86E74D467AABD6DC /* StatementDropTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementDropTable.swift; path = swift/source/abstract/StatementDropTable.swift; sourceTree = "<group>"; };
 		F3F8F3DDC95A60090108454941E1B3B6 /* Delete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delete.swift; path = swift/source/core/interface/Delete.swift; sourceTree = "<group>"; };
 		F55A897E1887D997C2DF2ACAAFB250AB /* mem5.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mem5.c; path = src/mem5.c; sourceTree = "<group>"; };
 		F59BFBC01AA20BDBDF4CD522DD830187 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
 		F5DE5D68CA01C00467E6792C1F46F53B /* rtree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rtree.h; path = ext/rtree/rtree.h; sourceTree = "<group>"; };
+		F5E81016100698EDB6BC2C89E43F3030 /* SEUTEDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SEUTEDatabase.swift; path = SevenModular/Classes/SEUTEDatabase.swift; sourceTree = "<group>"; };
 		F61DE31CCF757BF139ACF1A43D424A78 /* IntegerOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerOperators.swift; path = Sources/IntegerOperators.swift; sourceTree = "<group>"; };
 		F63A81CD70E4CEE6DBA65C36A584F758 /* rtree.c */ = {isa = PBXFileReference; includeInIndex = 1; name = rtree.c; path = ext/rtree/rtree.c; sourceTree = "<group>"; };
 		F661C4728E5F06D5B693F7643DF04E26 /* sqliterk_api.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sqliterk_api.c; path = repair/sqliterk_api.c; sourceTree = "<group>"; };
@@ -807,6 +806,7 @@
 		FC930D2DB6B9127C1086AB0209329C84 /* WCDB.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WCDB.swift.modulemap; sourceTree = "<group>"; };
 		FCC00B608092CE231E198454BBCD04A4 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
 		FCFC0D9681319DA6AECDB4E85F10057F /* os.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os.h; path = src/os.h; sourceTree = "<group>"; };
+		FFBE925740C3B9B8E4EF9CA4EF82A582 /* QPUTEAlarm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QPUTEAlarm.swift; path = SevenModular/Classes/QPUTEAlarm.swift; sourceTree = "<group>"; };
 		FFCA696EA81EF825C4D9B9754D1E2513 /* opcodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = opcodes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -886,6 +886,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002FD5C713C3210599D6568202BF912D /* SevenModular */ = {
+			isa = PBXGroup;
+			children = (
+				8C2D149005D96199C588DDED95B191D7 /* QPSedentaryRemind.swift */,
+				055CC778484B04C57448CD85D6A2EB9B /* QPSmartBandManager.swift */,
+				960E905C7D803D277DF9C5FDB8F5F18A /* QPSmartWatchData.swift */,
+				FFBE925740C3B9B8E4EF9CA4EF82A582 /* QPUTEAlarm.swift */,
+				F0BA9D5648C0B3AF550748F6A02EA500 /* QPUTEBrightScreenTime.swift */,
+				3F5D0E3548700291118B37633C2C760A /* QPUTEDateManage.swift */,
+				632DBCF2B9E2A39CB65E45257AEB2399 /* QPUTEModelDevices.swift */,
+				464EABEBEF5A3182177F4075AFB03557 /* QPUTERemind.swift */,
+				8C8B519D30395AA231500AC9270F2B21 /* QPUTEWeatherIndex.swift */,
+				F5E81016100698EDB6BC2C89E43F3030 /* SEUTEDatabase.swift */,
+				94FFACB487323BC7B4B92BF0E0C57C43 /* UTEAudioPlayer.swift */,
+				88131DFBBE35FCA10087E90B7A4D714C /* Frameworks */,
+				70981674AA6A0FC79763BF4BD7C08D99 /* Pod */,
+				40259D6BEB50E11DF0AB79A559735DE8 /* Support Files */,
+			);
+			name = SevenModular;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		04F230F077EF2749EEC4424CA2F116F8 /* ZIPFoundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -933,16 +955,6 @@
 			path = "../Target Support Files/WCDBOptimizedSQLCipher";
 			sourceTree = "<group>";
 		};
-		22E382BEEEA3D275123BE54A8853C8ED /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3DA3F9AC84100547E45A52EB8C211C48 /* LICENSE */,
-				AB24909350CD94AB441CF86527F550D2 /* README.md */,
-				D95247EDB8B0E3C4C9B2E126196E1F0D /* SevenModular.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		2D7528DA8C78805C10C55C0A2F0DCE2E /* SQLiteRepairKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -971,41 +983,29 @@
 			path = SQLiteRepairKit;
 			sourceTree = "<group>";
 		};
-		4C5B0568A4BC9751CD7288E55D7133A1 /* Support Files */ = {
+		40259D6BEB50E11DF0AB79A559735DE8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				487203AFE459F33092EB64C71D2B344D /* SevenModular.modulemap */,
-				6171BE90625E7C1E1A9F87953A1573CF /* SevenModular-dummy.m */,
-				A209721EACF9B96D6778C8722100E3E9 /* SevenModular-Info.plist */,
-				A15A02B9E129C972A7BC09630B0D934A /* SevenModular-prefix.pch */,
-				181B0C86B1F1A3E6BD8F81C3326C9232 /* SevenModular-umbrella.h */,
-				65DA94EEA10CAE939CE4910B05772704 /* SevenModular.debug.xcconfig */,
-				99390114FC450E3AFB0D1B1225B68C78 /* SevenModular.release.xcconfig */,
+				2E691FA6C19E0D72CC65E7FE4063FD7D /* SevenModular.modulemap */,
+				23A4D4538428B691D65A6C4080FFF855 /* SevenModular-dummy.m */,
+				A3C51A3E04974BCA2171B856D59619A8 /* SevenModular-Info.plist */,
+				7F332E226F622EEB6E1CA5BF9861A6F9 /* SevenModular-prefix.pch */,
+				BF606340B057FB0BCF48B28664B2AFEA /* SevenModular-umbrella.h */,
+				E8F4F9D987EC18B7795759A5A3F7D627 /* SevenModular.debug.xcconfig */,
+				8C25EB9F61D9652F8E7B17738D493AFE /* SevenModular.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/SevenModular";
 			sourceTree = "<group>";
 		};
-		762A613BD03C53CA76A36D3F1161F8CE /* SevenModular */ = {
+		70981674AA6A0FC79763BF4BD7C08D99 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				80015852F43E841C942754C4CE200F64 /* QPSedentaryRemind.swift */,
-				9160C88ABFECD9739281FA697CAF8D8D /* QPSmartBandManager.swift */,
-				D97388F6404A04BCD4C38461DFE34113 /* QPSmartWatchData.swift */,
-				E329B87CD771794374F6FFB2745641D8 /* QPUTEAlarm.swift */,
-				6DE5A4A55475703E8BB7D400E6952544 /* QPUTEBrightScreenTime.swift */,
-				7E7EC6F2AA1614EB519D0C6B16406814 /* QPUTEModelDevices.swift */,
-				405065F0BF4C66B272FF3A4DF1B46AF6 /* QPUTERemind.swift */,
-				29063F6AEDAC509AB74472FEB5BA794F /* QPUTEWeatherIndex.swift */,
-				F17CDFE2108F02A339D16131CEDA649C /* SEUTEDatabase.swift */,
-				7DF1D929DFA32A39539D15A9106B40B6 /* UTEAudioPlayer.swift */,
-				14E02C784857C46B3247915167D6F61C /* WatchDataIndex.swift */,
-				D78CD6C1A60AC174FC0F8BFABC1D547E /* Frameworks */,
-				22E382BEEEA3D275123BE54A8853C8ED /* Pod */,
-				4C5B0568A4BC9751CD7288E55D7133A1 /* Support Files */,
+				158EF6DBD9D253739414B57ADEC9BF22 /* LICENSE */,
+				CD3E62DD883E7A2DE3CF9A9536F44377 /* README.md */,
+				F003EB15EC878A059204FCC91B1BE39A /* SevenModular.podspec */,
 			);
-			name = SevenModular;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		7A69AA74B4ADDCDDFC0165DCA10B5C4E /* iOS */ = {
@@ -1042,6 +1042,14 @@
 				44063D84E6953E74B2BDDEDC02043DAE /* WCDBSwift.framework */,
 				C951F861389AD4CE92A98D6269CF55CE /* ZIPFoundation.framework */,
 				7A69AA74B4ADDCDDFC0165DCA10B5C4E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88131DFBBE35FCA10087E90B7A4D714C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				009FE4910319669BB639EDB2DAF99A3D /* UTESmartBandApi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1429,7 +1437,7 @@
 		CF2FA05B4ED5359C50B32E2DA935B735 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				762A613BD03C53CA76A36D3F1161F8CE /* SevenModular */,
+				002FD5C713C3210599D6568202BF912D /* SevenModular */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -1448,14 +1456,6 @@
 			);
 			name = "Pods-SevenModular_Tests";
 			path = "Target Support Files/Pods-SevenModular_Tests";
-			sourceTree = "<group>";
-		};
-		D78CD6C1A60AC174FC0F8BFABC1D547E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9A7CDA49C6D9EC26817D7FC82BF49F66 /* UTESmartBandApi.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1644,7 +1644,7 @@
 			buildConfigurationList = 3F346E64C214C7D9B0D4B9A26EFD2236 /* Build configuration list for PBXNativeTarget "SevenModular" */;
 			buildPhases = (
 				96C19B951867F36361122FD679CC2F64 /* Headers */,
-				2D8095DE30B8439ABB6BC96278F983F8 /* Sources */,
+				398588F06A8333F9054B600F27C9D24D /* Sources */,
 				FCF44D4204FDC821EEF475DC60B02E5E /* Frameworks */,
 				09EE5D5759F149EC9BD5B73BA644F849 /* Resources */,
 			);
@@ -2054,22 +2054,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D8095DE30B8439ABB6BC96278F983F8 /* Sources */ = {
+		398588F06A8333F9054B600F27C9D24D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE843F213E2268C46D2AFB3CA0E1439B /* QPSedentaryRemind.swift in Sources */,
-				950A303110BB5CA47D466F2948850F47 /* QPSmartBandManager.swift in Sources */,
-				A8002D47D6AAA9DDEE691EEEFBC48E23 /* QPSmartWatchData.swift in Sources */,
-				F027A6F252ECEB53B2645BD8CC1F31CB /* QPUTEAlarm.swift in Sources */,
-				0776B54EB591097DAB1DE1CAB7DF510B /* QPUTEBrightScreenTime.swift in Sources */,
-				BE2E13977C93378675FD577BFD4A69A0 /* QPUTEModelDevices.swift in Sources */,
-				6A1BD1281EFD531A1404EBDB8892382D /* QPUTERemind.swift in Sources */,
-				68C5914DD0C068A446165593C49B655A /* QPUTEWeatherIndex.swift in Sources */,
-				7EB3E25DD6C6386527CD1E06253716B1 /* SEUTEDatabase.swift in Sources */,
-				6AB5E3BC557B9D48A1EAB4489317620B /* SevenModular-dummy.m in Sources */,
-				684937AAC511A683A8B6DF3288B36ED7 /* UTEAudioPlayer.swift in Sources */,
-				72774977E81D1548F0FE4C1DD444DB46 /* WatchDataIndex.swift in Sources */,
+				54858FDF559B330427CE9516B59E2549 /* QPSedentaryRemind.swift in Sources */,
+				85320E6FADE6CCE2E921391657A23B5A /* QPSmartBandManager.swift in Sources */,
+				09D478BED02A4486520B21A17E47D48A /* QPSmartWatchData.swift in Sources */,
+				F746C55B954777156ED055B04366821B /* QPUTEAlarm.swift in Sources */,
+				77A6F298B7625D97BF8EC270EA4993E0 /* QPUTEBrightScreenTime.swift in Sources */,
+				EF9B5ACF3E718180F1FE3D730750F9E3 /* QPUTEDateManage.swift in Sources */,
+				162D59D955F0580D6E503487422FD2E4 /* QPUTEModelDevices.swift in Sources */,
+				E360D5F54BF438CBE13C291D86CF353B /* QPUTERemind.swift in Sources */,
+				94BB1F4FB405557D3A392C8E9759CB71 /* QPUTEWeatherIndex.swift in Sources */,
+				FE9D07FEC61F629DD607D89B500354FE /* SEUTEDatabase.swift in Sources */,
+				B02DC9E2BDD2EF40E1B20A02D1DE03C1 /* SevenModular-dummy.m in Sources */,
+				9C387469010F4F10D37D488FFA064A04 /* UTEAudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2468,7 +2468,7 @@
 		};
 		42461B0507F85A86C832830E781F42C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99390114FC450E3AFB0D1B1225B68C78 /* SevenModular.release.xcconfig */;
+			baseConfigurationReference = 8C25EB9F61D9652F8E7B17738D493AFE /* SevenModular.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2703,7 +2703,7 @@
 		};
 		B3E95E413A3C0B24D4DAAA83D944F19F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65DA94EEA10CAE939CE4910B05772704 /* SevenModular.debug.xcconfig */;
+			baseConfigurationReference = E8F4F9D987EC18B7795759A5A3F7D627 /* SevenModular.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

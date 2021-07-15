@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WatchDataIndex: NSObject {
+class QPUTEDateManage: NSObject {
 
     
 }
