@@ -11,7 +11,7 @@ import ObjectMapper
 import WCDBSwift
 import UTESmartBandApi
 
-enum QPData24Type: Int {
+public enum QPData24Type: Int {
     case QPDataTypeHRM = 0
     case QPDataTypeBlood
 //    case QPDataTypeSleep
@@ -19,7 +19,7 @@ enum QPData24Type: Int {
 }
 
 //心率
-class QPSmartHRMData: NSObject, Mappable, TableCodable, TableModel {
+public class QPSmartHRMData: NSObject, Mappable, TableCodable, TableModel {
     
     static var tableName: String {
         return String(describing: QPSmartHRMData.self)
@@ -90,11 +90,11 @@ class QPSmartHRMData: NSObject, Mappable, TableCodable, TableModel {
         Database.defaulted.seven_insertOrReplace(objects: datas, on: QPSmartHRMData.Properties.all)
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         id <- map["id"]
         heartTime <- map["date"]
         heartCount <- map["heart_rate"]
@@ -102,8 +102,8 @@ class QPSmartHRMData: NSObject, Mappable, TableCodable, TableModel {
         
     }
     
-    enum CodingKeys: String, CodingTableKey {
-        typealias Root = QPSmartHRMData
+    public enum CodingKeys: String, CodingTableKey {
+        public typealias Root = QPSmartHRMData
         
         case id
         case heartTime
@@ -111,9 +111,9 @@ class QPSmartHRMData: NSObject, Mappable, TableCodable, TableModel {
 //        case heartType
         case uploadSeven
         
-        static let objectRelationalMapping = TableBinding(CodingKeys.self)
+        public static let objectRelationalMapping = TableBinding(CodingKeys.self)
         
-        static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
+        public static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
             return [
                 heartTime: ColumnConstraintBinding(isPrimary: true, isUnique: true)
             ]
@@ -135,7 +135,7 @@ extension UTEModelHRMData {
 }
 
 //血压
-class QPSmartBloodData: NSObject, Mappable, TableCodable, TableModel {
+public class QPSmartBloodData: NSObject, Mappable, TableCodable, TableModel {
     
     static var tableName: String {
         return String(describing: QPSmartBloodData.self)
@@ -240,11 +240,11 @@ class QPSmartBloodData: NSObject, Mappable, TableCodable, TableModel {
         Database.defaulted.seven_insertOrReplace(objects: datas, on: QPSmartBloodData.Properties.all)
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         id <- map["id"]
         bloodTime <- map["date"]
         bloodSystolic <- map["systolicPressure"]
@@ -252,8 +252,8 @@ class QPSmartBloodData: NSObject, Mappable, TableCodable, TableModel {
         uploadSeven <- map["uploadSeven"]
     }
     
-    enum CodingKeys: String, CodingTableKey {
-        typealias Root = QPSmartBloodData
+    public enum CodingKeys: String, CodingTableKey {
+        public typealias Root = QPSmartBloodData
         
         case id
         case bloodTime
@@ -263,9 +263,9 @@ class QPSmartBloodData: NSObject, Mappable, TableCodable, TableModel {
 //        case heartRateIrregular
 //        case heartCount
         
-        static let objectRelationalMapping = TableBinding(CodingKeys.self)
+        public static let objectRelationalMapping = TableBinding(CodingKeys.self)
         
-        static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
+        public static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
             return [
                 bloodTime: ColumnConstraintBinding(isPrimary: true, isUnique: true)
             ]
@@ -289,7 +289,7 @@ extension UTEModelBloodData {
 }
 
 //体温
-class QPSmartBodyTemperatureData: NSObject, Mappable, TableCodable, TableModel {
+public class QPSmartBodyTemperatureData: NSObject, Mappable, TableCodable, TableModel {
     
     static var tableName: String {
         return String(describing: QPSmartBodyTemperatureData.self)
@@ -360,11 +360,11 @@ class QPSmartBodyTemperatureData: NSObject, Mappable, TableCodable, TableModel {
         Database.defaulted.seven_insertOrReplace(objects: datas, on: QPSmartBodyTemperatureData.Properties.all)
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         id <- map["id"]
         time <- map["date"]
         bodyTemperature <- map["temperature"]
@@ -372,8 +372,8 @@ class QPSmartBodyTemperatureData: NSObject, Mappable, TableCodable, TableModel {
         
     }
     
-    enum CodingKeys: String, CodingTableKey {
-        typealias Root = QPSmartBodyTemperatureData
+    public enum CodingKeys: String, CodingTableKey {
+        public typealias Root = QPSmartBodyTemperatureData
         
         case id
         case time
@@ -381,9 +381,9 @@ class QPSmartBodyTemperatureData: NSObject, Mappable, TableCodable, TableModel {
 //        case shellTemperature
         case uploadSeven
         
-        static let objectRelationalMapping = TableBinding(CodingKeys.self)
+        public static let objectRelationalMapping = TableBinding(CodingKeys.self)
         
-        static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
+        public static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
             return [
                 time: ColumnConstraintBinding(isPrimary: true, isUnique: true)
             ]
@@ -402,7 +402,7 @@ extension UTEModelBodyTemperature {
 }
 
 //用来画线
-class Day24Data: NSObject {
+public class Day24Data: NSObject {
     @objc var index:Int = 0
     @objc var is_empty: Bool = true
     @objc var values:[String]! = []   //存放数组里面的数据  高压
@@ -438,7 +438,7 @@ class Day24Data: NSObject {
 }
 
 //步数
-class QPSportWalk: Mappable {
+public class QPSportWalk: Mappable {
     
     var step_count: Int! = 0
     var use_time: String! = "0"
@@ -480,11 +480,11 @@ class QPSportWalk: Mappable {
         return oneDays
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         step_count <- map["step_count"]
         use_time <- map["use_time"]
         calories <- map["calories"]
@@ -495,7 +495,7 @@ class QPSportWalk: Mappable {
 }
 
 //睡眠
-class QPSleepDataDay: Mappable {
+public class QPSleepDataDay: Mappable {
     
     var device_id: Int! = 3
     var end_time_hour: Int! = 0 //结束小时数
@@ -548,11 +548,11 @@ class QPSleepDataDay: Mappable {
         return self
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         
         end_time_hour <- map["end_time_hour"]
         end_time_minute <- map["end_time_minute"]
@@ -568,7 +568,7 @@ class QPSleepDataDay: Mappable {
     }
 }
 
-class QPSleepItem: Mappable {
+public class QPSleepItem: Mappable {
     
     var sleep_status: Int! = 0 //睡眠状态
     var durations: Int! = 0   //持续时间
@@ -578,11 +578,11 @@ class QPSleepItem: Mappable {
         self.durations = durations
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         sleep_status <- map["sleep_status"]
         durations <- map["durations"]
     }

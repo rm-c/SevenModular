@@ -17,7 +17,7 @@ class SEUTEDatabase {
     
 }
 
-extension Database {
+public extension Database {
     static let defaulted = { () -> Database in
         let documentPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)
         let documentPath = documentPaths[0]

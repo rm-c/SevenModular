@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 import WCDBSwift
 
-class QPUTEBrightScreenTime:NSObject, Mappable, TableCodable, TableModel {
+public class QPUTEBrightScreenTime:NSObject, Mappable, TableCodable, TableModel {
     
     static var tableName: String {
         return String(describing: QPUTEBrightScreenTime.self)
@@ -41,24 +41,24 @@ class QPUTEBrightScreenTime:NSObject, Mappable, TableCodable, TableModel {
         Database.defaulted.seven_update(objects: model, on: QPUTEBrightScreenTime.Properties.all, where: QPUTEBrightScreenTime.Properties.id == 0)
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         
     }
     
-    enum CodingKeys: String, CodingTableKey {
-        typealias Root = QPUTEBrightScreenTime
+    public enum CodingKeys: String, CodingTableKey {
+        public typealias Root = QPUTEBrightScreenTime
         
         case id
         case lightTime
         case enable
         
-        static let objectRelationalMapping = TableBinding(CodingKeys.self)
+        public static let objectRelationalMapping = TableBinding(CodingKeys.self)
         
-        static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
+        public static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
             return [
                 id: ColumnConstraintBinding(isPrimary: true)
             ]

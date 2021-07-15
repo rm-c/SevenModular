@@ -10,7 +10,7 @@ import UIKit
 import ObjectMapper
 import UTESmartBandApi
 
-class QPUTEWeatherIndex: NSObject,Mappable {
+public class QPUTEWeatherIndex: NSObject,Mappable {
     
     var temperature: Int! = 0
     var high_temperature: Int! = 0
@@ -41,11 +41,11 @@ class QPUTEWeatherIndex: NSObject,Mappable {
         return weather
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         temperature <- (map["temperature"],IntTransformTyper())
         high_temperature <- (map["high"],IntTransformTyper())
         low_temperature <- (map["low"],IntTransformTyper())

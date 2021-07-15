@@ -11,7 +11,7 @@ import ObjectMapper
 import WCDBSwift
 import UTESmartBandApi
 
-class QPUTEModelDevices:NSObject, Mappable, TableCodable, TableModel {
+public class QPUTEModelDevices:NSObject, Mappable, TableCodable, TableModel {
     
     static var tableName: String {
         return String(describing: QPUTEModelDevices.self)
@@ -52,24 +52,24 @@ class QPUTEModelDevices:NSObject, Mappable, TableCodable, TableModel {
         Database.defaulted.seven_deleteObject(with: QPUTEModelDevices.self, where: QPUTEModelDevices.Properties.identifier == device.identifier)
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         
     }
     
-    enum CodingKeys: String, CodingTableKey {
-        typealias Root = QPUTEModelDevices
+    public enum CodingKeys: String, CodingTableKey {
+        public typealias Root = QPUTEModelDevices
         
         case id
         case identifier
         case name
         
-        static let objectRelationalMapping = TableBinding(CodingKeys.self)
+        public static let objectRelationalMapping = TableBinding(CodingKeys.self)
         
-        static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
+        public static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
             return [
                 identifier: ColumnConstraintBinding(isPrimary: true),
                 id: ColumnConstraintBinding(isAutoIncrement: true)

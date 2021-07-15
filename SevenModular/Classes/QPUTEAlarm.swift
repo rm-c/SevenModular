@@ -23,7 +23,7 @@ class QPUTEAlarm:NSObject, Mappable {
 
 
 
-class QPUTEAlarmWeek:NSObject, Mappable,TableCodable, TableModel {
+public class QPUTEAlarmWeek:NSObject, Mappable,TableCodable, TableModel {
     static var tableName: String {
         return String(describing: QPUTEAlarmWeek.self)
     }
@@ -107,7 +107,7 @@ class QPUTEAlarmWeek:NSObject, Mappable,TableCodable, TableModel {
         }
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
@@ -121,7 +121,7 @@ class QPUTEAlarmWeek:NSObject, Mappable,TableCodable, TableModel {
         return model
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         id <- map["id"]
         title <- map["title"]
         time <- map["time"]
@@ -131,8 +131,8 @@ class QPUTEAlarmWeek:NSObject, Mappable,TableCodable, TableModel {
         countVibrate <- map["countVibrate"]
     }
     
-    enum CodingKeys: String, CodingTableKey {
-        typealias Root = QPUTEAlarmWeek
+    public enum CodingKeys: String, CodingTableKey {
+        public typealias Root = QPUTEAlarmWeek
         
         case id
         case title
@@ -142,9 +142,9 @@ class QPUTEAlarmWeek:NSObject, Mappable,TableCodable, TableModel {
         case num
         case countVibrate
     
-        static let objectRelationalMapping = TableBinding(CodingKeys.self)
+        public static let objectRelationalMapping = TableBinding(CodingKeys.self)
         
-        static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
+        public static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
             return [
                 id: ColumnConstraintBinding(isPrimary: true, isAutoIncrement: true)
             ]

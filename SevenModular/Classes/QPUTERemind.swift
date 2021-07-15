@@ -11,7 +11,7 @@ import ObjectMapper
 import WCDBSwift
 import UTESmartBandApi
 
-enum QPUTERemindType : Int, ColumnJSONCodable {
+public enum QPUTERemindType : Int, ColumnJSONCodable {
     case QPUTE_Phone = 0
     case QPUTE_SMS
     case QPUTE_Wechat
@@ -20,7 +20,7 @@ enum QPUTERemindType : Int, ColumnJSONCodable {
 }
 
 
-class QPUTERemind:NSObject, Mappable, TableCodable, TableModel {
+public class QPUTERemind:NSObject, Mappable, TableCodable, TableModel {
     
     static var tableName: String {
         return String(describing: QPUTERemind.self)
@@ -71,11 +71,11 @@ class QPUTERemind:NSObject, Mappable, TableCodable, TableModel {
         Database.defaulted.seven_update(objects: model, on: QPUTERemind.Properties.all, where: QPUTERemind.Properties.id == model.id)
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         
         name <- map["name"]
         remindType <- map["platformType"]
@@ -84,8 +84,8 @@ class QPUTERemind:NSObject, Mappable, TableCodable, TableModel {
     }
     
     
-    enum CodingKeys: String, CodingTableKey {
-        typealias Root = QPUTERemind
+    public enum CodingKeys: String, CodingTableKey {
+        public typealias Root = QPUTERemind
 
         case id
         case name
@@ -93,9 +93,9 @@ class QPUTERemind:NSObject, Mappable, TableCodable, TableModel {
         case remindSwitch
         case remindIcon
 
-        static let objectRelationalMapping = TableBinding(CodingKeys.self)
+        public static let objectRelationalMapping = TableBinding(CodingKeys.self)
 
-        static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
+        public static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
             return [
                 id: ColumnConstraintBinding(isPrimary: true)
             ]

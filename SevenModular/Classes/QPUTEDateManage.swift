@@ -8,6 +8,5 @@
 import UIKit
 
 class QPUTEDateManage: NSObject {
-
     
 }

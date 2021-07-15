@@ -11,7 +11,7 @@ import ObjectMapper
 import WCDBSwift
 import UTESmartBandApi
 
-class QPSedentaryRemind:NSObject, Mappable,TableCodable, TableModel {
+public class QPSedentaryRemind:NSObject, Mappable,TableCodable, TableModel {
     
     static var tableName: String {
         return String(describing: QPSedentaryRemind.self)
@@ -52,11 +52,11 @@ class QPSedentaryRemind:NSObject, Mappable,TableCodable, TableModel {
     override init() {
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         startTime <- map["startTime"]
         endTime <- map["endTime"]
         enable <- map["enable"]
@@ -65,8 +65,8 @@ class QPSedentaryRemind:NSObject, Mappable,TableCodable, TableModel {
     }
     
     
-    enum CodingKeys: String, CodingTableKey {
-        typealias Root = QPSedentaryRemind
+    public enum CodingKeys: String, CodingTableKey {
+        public typealias Root = QPSedentaryRemind
         
         case id
         case startTime
@@ -74,9 +74,9 @@ class QPSedentaryRemind:NSObject, Mappable,TableCodable, TableModel {
         case enable
         case duration
         case enableSiesta
-        static let objectRelationalMapping = TableBinding(CodingKeys.self)
+        public static let objectRelationalMapping = TableBinding(CodingKeys.self)
         
-        static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
+        public static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
             return [
                 id: ColumnConstraintBinding(isPrimary: true)
             ]

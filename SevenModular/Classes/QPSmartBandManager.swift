@@ -30,7 +30,7 @@ struct QPBandSync {
     }
 }
 
-class QPSmartBandManager: NSObject, UTEManagerDelegate {
+public class QPSmartBandManager: NSObject, UTEManagerDelegate {
     
     @objc static let shareManger = QPSmartBandManager()
     
@@ -67,7 +67,7 @@ class QPSmartBandManager: NSObject, UTEManagerDelegate {
     }
     
     // MARK: - UTEManagerDelegate
-    func uteManagerDiscover(_ modelDevices: UTEModelDevices!) {
+    public func uteManagerDiscover(_ modelDevices: UTEModelDevices!) {
         
         var sameDevices = false
         for model in self.mArrayDevices {
@@ -88,7 +88,7 @@ class QPSmartBandManager: NSObject, UTEManagerDelegate {
         self.devicesSateBlock?(-1)
     }
     
-    func uteManagerExtraIsAble(_ isAble: Bool) {
+    public func uteManagerExtraIsAble(_ isAble: Bool) {
         
         if isAble {
             print("***Successfully turn on the additional functions of the device")
@@ -102,20 +102,20 @@ class QPSmartBandManager: NSObject, UTEManagerDelegate {
         
     }
     
-    func uteManagerReceiveTodaySteps(_ runData: UTEModelRunData!) {
+    public func uteManagerReceiveTodaySteps(_ runData: UTEModelRunData!) {
         
         print("***Today time=\(String(describing: runData.time))，Total steps=\(runData.totalSteps),Total distance=\(runData.distances),Total calories=\(runData.calories),Current hour steps=\(runData.hourSteps)")
         
     }
     
-    func uteManagerReceiveTodaySport(_ dict: [AnyHashable : Any]!) {
+    public func uteManagerReceiveTodaySport(_ dict: [AnyHashable : Any]!) {
         
         let walk : UTEModelSportWalkRun = dict[kUTEQuerySportWalkRunData] as! UTEModelSportWalkRun
         print("sport device step=\(walk.stepsTotal)")
         
     }
     
-    func uteManagerDevicesSate(_ devicesState: UTEDevicesSate, error: Swift.Error?, userInfo info: [AnyHashable : Any] = [:]) {
+    public func uteManagerDevicesSate(_ devicesState: UTEDevicesSate, error: Swift.Error?, userInfo info: [AnyHashable : Any] = [:]) {
         
         if let error = error {
             let code = (error as NSError).code
@@ -268,19 +268,19 @@ class QPSmartBandManager: NSObject, UTEManagerDelegate {
         }
     }
     
-    func uteManagerUTEIbeaconOption(_ option: UTEIbeaconOption, value: String!) {
+    public func uteManagerUTEIbeaconOption(_ option: UTEIbeaconOption, value: String!) {
         
         print("ibeacon value = \(String(describing: value))")
         
     }
     
-    func uteManagerTakePicture() {
+    public func uteManagerTakePicture() {
         
         print("***I took a photo, if I don’t take a photo, please exit the photo mode")
         
     }
     
-    func uteManagerBluetoothState(_ bluetoothState: UTEBluetoothState) {
+    public func uteManagerBluetoothState(_ bluetoothState: UTEBluetoothState) {
         
         weak var weakSelf = self
         DispatchQueue.main.async {
@@ -326,7 +326,7 @@ class QPSmartBandManager: NSObject, UTEManagerDelegate {
         }
     }
     
-    func uteManagerReceiveCustomData(_ data: Data!, result: Bool) {
+    public func uteManagerReceiveCustomData(_ data: Data!, result: Bool) {
         
         if result {
             print("******Successfully received data = \(String(describing: data))")
@@ -336,7 +336,7 @@ class QPSmartBandManager: NSObject, UTEManagerDelegate {
         
     }
     
-    func uteManagerSendCustomDataResult(_ result: Bool) {
+    public func uteManagerSendCustomDataResult(_ result: Bool) {
         
         if result {
             print("***Send custom data successfully")
@@ -346,7 +346,7 @@ class QPSmartBandManager: NSObject, UTEManagerDelegate {
         
     }
     
-    func uteManageTouchDeviceReceive(_ data: Data!) {
+    public func uteManageTouchDeviceReceive(_ data: Data!) {
         let bytes = [UInt8](data)
         if let byte1 = bytes.first,let byte2 = bytes.last {
 //            if (byte1 == 0xd1) && (byte2 == 0x0a) {
@@ -357,14 +357,14 @@ class QPSmartBandManager: NSObject, UTEManagerDelegate {
         }
     }
     //设置成功回调
-    func uteManageUTEOptionCallBack(_ callback: UTECallBack) {
+    public func uteManageUTEOptionCallBack(_ callback: UTECallBack) {
         DispatchQueue.main.async {
             self.callBackSateBlock?(callback.rawValue)
         }
     }
     
     //数据同步进度
-    func uteManagerSyncProcess(_ process: Int) {
+    public func uteManagerSyncProcess(_ process: Int) {
         print("同步进度:\(process)")
     }
     
@@ -373,7 +373,7 @@ class QPSmartBandManager: NSObject, UTEManagerDelegate {
 //    }
     
     //心率每10分钟返回一次
-    func uteManagerReceiveTenMinLaterHRM(_ dict: [AnyHashable : Any]!) {
+    public func uteManagerReceiveTenMinLaterHRM(_ dict: [AnyHashable : Any]!) {
         if let hrm = dict[kUTEQuery24HRMData] as? UTEModelHRMData {
             let dict = [kUTEQuery24HRMData : [hrm]]
             syncSucess(info: dict)
