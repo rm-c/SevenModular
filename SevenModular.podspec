@@ -38,7 +38,7 @@ TODO: Add long description of the pod here.
   # }
 #  s.osx.vendored_framework = "PLCrashReporter-1.2-rc2/Mac OS X Framework/CrashReporter.framework"
 #  s.osx.resource = "PLCrashReporter-1.2-rc2/Mac OS X Framework/CrashReporter.framework"
-  s.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks' }
+  s.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks', 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'Foundation'

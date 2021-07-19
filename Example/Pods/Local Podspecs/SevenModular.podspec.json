@@ -21,7 +21,8 @@
   "swift_versions": "5.0",
   "source_files": "SevenModular/Classes/**/*.{swift}",
   "xcconfig": {
-    "LD_RUNPATH_SEARCH_PATHS": "@loader_path/../Frameworks"
+    "LD_RUNPATH_SEARCH_PATHS": "@loader_path/../Frameworks",
+    "VALID_ARCHS[sdk=iphonesimulator*]": ""
   },
   "frameworks": [
     "UIKit",

@@ -29,7 +29,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
-  SevenModular: ec89db3f36e66401b2b4de47f4a4b9fcc2e5772d
+  SevenModular: f033bd46e043d83e42c9b51b9f1a207bcdc11243
   SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
   WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
