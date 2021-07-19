@@ -126,7 +126,7 @@ extension UTEModelHRMData {
     
     func hrmData() -> QPSmartHRMData {
         let data = QPSmartHRMData()
-//        data.heartTime = NSDate.date(withTimeUTEString: self.heartTime);//self.heartTime
+        data.heartTime = Date.date(withTimeUTEString: self.heartTime);//self.heartTime
         data.heartCount = self.heartCount
 //        data.heartType = self.heartType.rawValue//QPUTEHRMType.init(rawValue: self.heartType.rawValue)
         
@@ -278,7 +278,7 @@ extension UTEModelBloodData {
     
     func bloodData() -> QPSmartBloodData {
         let data = QPSmartBloodData()
-//        data.bloodTime = NSDate.date(withTimeUTEString: self.bloodTime);//self.bloodTime
+        data.bloodTime = Date.date(withTimeUTEString: self.bloodTime);//self.bloodTime
 //        data.heartCount = self.heartCount
         data.bloodSystolic = self.bloodSystolic
         data.bloodDiastolic = self.bloodDiastolic
@@ -395,7 +395,7 @@ extension UTEModelBodyTemperature {
     
     func bodyTemperatureData() -> QPSmartBodyTemperatureData {
         let data = QPSmartBodyTemperatureData()
-//        data.time = NSDate.date(withTimeUTEYMDMSString: self.time);//self.time
+        data.time = Date.date(withTimeUTEYMDMSString: self.time);//self.time
         data.bodyTemperature = self.bodyTemperature
         return data
     }
@@ -454,7 +454,9 @@ public class QPSportWalk: Mappable {
 
         var dic:[String:[QPSportWalk]] = [:]
         datas.forEach { step in
-//            dic.updateValue([], forKey: NSDate.date(withYMDString: step.date))
+            if let date = Date.date(withYMDString: step.date) {
+                dic.updateValue([], forKey: date)
+            }
         }
         
         for item in dic.keys {
@@ -468,7 +470,9 @@ public class QPSportWalk: Mappable {
         var oneDays:[QPSportWalk] = []
         for value in dic.values {
             let walk = QPSportWalk()
-//            walk.date = NSDate.date(withYMDString: value.first?.date)
+            if let date = value.first?.date {
+                walk.date = Date.date(withYMDString: date)
+            }
             for item in value {
                 walk.step_count += item.step_count
                 walk.calories += item.calories
@@ -516,12 +520,12 @@ public class QPSleepDataDay: Mappable {
     //对每一天的数据进行处理
     func sleepData(data:[UTEModelSleepData]) -> QPSleepDataDay {
         
-//        if let item = data.last {
-//            self.date = NSDate.date(with: item.startTime)
-//        }
+        if let item = data.last {
+            self.date = Date.date(with: item.startTime)
+        }
         var sleepData: [QPSleepItem]! = []
         data.forEach { (data) in
-            let total_minute = 0//NSDate.start(data.startTime, endDate: data.endTime, formatString: "yyyy-MM-dd-HH-mm")
+            let total_minute = Date.startDate(data.startTime, endDate: data.endTime, formatString: "yyyy-MM-dd-HH-mm")
             self.total_minute += total_minute
             var sleepType = 0
             switch data.sleepType {

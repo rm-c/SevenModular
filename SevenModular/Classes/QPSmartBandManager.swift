@@ -8,13 +8,31 @@
 
 import UIKit
 import WCDBSwift
-//import JSONModel
 import ObjectMapper
-//import MJExtension
 import UTESmartBandApi
 
 let ScreenWidth = UIScreen.main.bounds.width
 let ScreenHeight = UIScreen.main.bounds.height
+
+//NSNotification.Name
+let UpdateOfMeasurementData = "UpdateOfMeasurementData" //手表数据更新后通知
+let UpdateWatchSyncData = "UpdateWatchSyncData" //手表数据同步完成更新
+
+//dic key
+let WeightKey = "UpdateWeightData"
+let UpdateHRMKey = "UpdateHRMKey"
+let UpdateBloodKey = "UpdateBloodKey"
+let UpdateBodyTemperatureKey = "UpdateBodyTemperatureKey"
+
+@objc
+public enum HomeHealthType: Int {
+    case _Step  = 0
+    case _Sleep
+    case _Weight
+    case _Blood
+    case _HRM
+    case _Temperature
+}
 
 struct QPBandSync {
     var success: Bool! = false
@@ -44,6 +62,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
     
     @objc public var devicesSateBlock: ( (Int) -> Void )?   //UTEDevicesSate
     @objc public var callBackSateBlock: ( (Int) -> Void )?  //UTECallBack
+    @objc public var dataSyncSuccessBlock: ( (HomeHealthType, Dictionary<String, Any>) -> Void )?  //sync 数据同步完成后会调
     
     @objc public let smartBandMgr = UTESmartBandClient.sharedInstance()
     var passwordType : UTEPasswordType?
@@ -193,7 +212,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
                         let info = [kUTEQueryBloodData:[model]]
                         syncSucess(info: info)
                         DispatchQueue.main.async {
-                            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "UpdateOfMeasurementData"), object: nil, userInfo: ["UpdateBloodKey":"\(model.bloodSystolic ?? "120")/\(model.bloodDiastolic ?? "75")"])
+                            NotificationCenter.default.post(name: NSNotification.Name(rawValue: UpdateOfMeasurementData), object: nil, userInfo: ["UpdateBloodKey":"\(model.bloodSystolic ?? "120")/\(model.bloodDiastolic ?? "75")"])
                         }
                         
                     }
@@ -365,7 +384,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
     
     //数据同步进度
     public func uteManagerSyncProcess(_ process: Int) {
-        print("同步进度:\(process)")
+//        print("同步进度:\(process)")
     }
     
 //    func uteManagerReceiveSportHRM(_ dict: [AnyHashable : Any]!) {
@@ -378,7 +397,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
             let dict = [kUTEQuery24HRMData : [hrm]]
             syncSucess(info: dict)
             DispatchQueue.main.async {
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "UpdateOfMeasurementData"), object: nil, userInfo: ["UpdateHRMKey":"\(hrm.heartCount ?? "80")"])
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: UpdateOfMeasurementData), object: nil, userInfo: ["UpdateHRMKey":"\(hrm.heartCount ?? "80")"])
             }
         }
     }
@@ -486,19 +505,19 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
         
     }
     
-    @objc public func deviceInfoSetting(lightTime:Int = 5,handlight: Int = 1,local:Bool = true) {
-        
-//        guard connectDevices() != nil && SEUserObject.sharedSEUser() != nil else {
-//            return
-//        }
+    @objc public func deviceInfoSetting(lightTime:Int = 5,handlight: Int = 1,local:Bool = true, height: Int = 175, weight:Int = 60, sex:Int = 1, step_goal:Int = 6000) {
+//        && SEUserObject.sharedSEUser() != nil
+        guard connectDevices() != nil else {
+            return
+        }
         
         let infoModel = UTEModelDeviceInfo.init()
-//        infoModel.heigh = CGFloat(SEUserObject.sharedSEUser().height > 67 ? SEUserObject.sharedSEUser().height : 175)
-//        infoModel.weight = CGFloat(SEUserObject.sharedSEUser().weight > 10 ? SEUserObject.sharedSEUser().weight : 60)
+        infoModel.heigh = CGFloat(height > 67 ? height : 175)
+        infoModel.weight = CGFloat(weight > 10 ? weight : 60)
         infoModel.age = 30
-//        if let sex = UTEDeviceInfoSex.init(rawValue: SEUserObject.sharedSEUser().sex) {
-//            infoModel.sex = sex
-//        }
+        if let sex = UTEDeviceInfoSex.init(rawValue: sex) {
+            infoModel.sex = sex
+        }
 //        infoModel.languageIsChinese = true
         if local, let dataModel:QPUTEBrightScreenTime = Database.defaulted.seven_getObject(on: QPUTEBrightScreenTime.Properties.all) {
             infoModel.handlight = dataModel.enable ? 1 : -1
@@ -509,9 +528,9 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
         }
         infoModel.maxHeart = 185
 //        if (SEUserObject.sharedSEUser().target.step_goal_count != nil) {
-//            infoModel.sportTarget = Int(SEUserObject.sharedSEUser().target.step_goal_count) ?? 6000
+            infoModel.sportTarget = step_goal
 //        } else {
-//            infoModel.sportTarget = 6000
+            infoModel.sportTarget = 6000
 //        }
         
         
@@ -525,7 +544,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
     func syncSucess(info : Dictionary<AnyHashable, Any>) -> Void {
         
         print("Synchronization complete")
-//        var syncType: HomeHealthType?
+        var syncType: HomeHealthType?
         //        let arrayAllSport = info[kUTEQuerySportHRMData] as! NSArray
         
         if let arrayRun = info[kUTEQueryRunData] as? NSArray {
@@ -551,7 +570,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
             
             updateSportStep(datas: stepData)
             
-//            syncType = HomeHealthType_Step
+            syncType = ._Step
         }
         
         if let arraySleep = info[kUTEQuerySleepData] as? NSArray {
@@ -578,7 +597,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
             
             updateSleep(datas: sleepDatas)
             
-//            syncType = HomeHealthType_Sleep
+            syncType = ._Sleep
         }
         
         if let arrayHRM = info[kUTEQueryHRMData] as? NSArray {
@@ -594,7 +613,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
             
             updateHRMData(datas: hrmData)
             
-//            syncType = HomeHealthType_HRM
+            syncType = ._HRM
         }
         
         if let array24HRM = info[kUTEQuery24HRMData] as? NSArray {
@@ -610,7 +629,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
             
             updateHRMData(datas: hrmData)
             
-//            syncType = HomeHealthType_HRM
+            syncType = ._HRM
         }
         
         if let arrayBlood = info[kUTEQueryBloodData] as? NSArray {
@@ -631,7 +650,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
             
             updateBloodData(datas: bloodData)
             
-//            syncType = HomeHealthType_Blood
+            syncType = ._Blood
         }
         
         if let arrayTem = info[kUTEQueryBodyTemperature] as? NSArray {
@@ -647,14 +666,14 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
             
             updateBodyTemperatureData(datas: temData)
             
-//            syncType = HomeHealthType_Temperature
+            syncType = ._Temperature
         }
         
-//        if let type = syncType {
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
-//                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "UpdateWatchSyncData"), object: nil, userInfo: ["syncType":type.rawValue])
-//            })
-//        }
+        if let type = syncType {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: UpdateWatchSyncData), object: nil, userInfo: ["syncType":type.rawValue])
+            })
+        }
         
     }
     
@@ -814,12 +833,13 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
     
     func updateHRMData(datas: [QPSmartHRMData]) {
         
-//        guard let hrms = datas.toJSONString() else {
-//            return
-//        }
-//
-//        let dic:[String:String] = ["heart_rate_list":hrms]
-//
+        guard !datas.isEmpty, let hrms = datas.toJSONString() else {
+            return
+        }
+        
+        let dic:[String:String] = ["heart_rate_list":hrms]
+        
+        dataSyncSuccessBlock?(._HRM,dic)
 //        SEWebManager.uploadHeartRecord(dic) { (data) in
 //
 //        } fail: { (error) in
@@ -829,12 +849,12 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
     }
     
     func updateBloodData(datas: [QPSmartBloodData]) {
-//        guard let blood = datas.toJSONString() else {
-//            return
-//        }
+        guard !datas.isEmpty, let blood = datas.toJSONString() else {
+            return
+        }
         
-//        let dic:[String:String] = ["pressure_list":blood]
-        
+        let dic:[String:String] = ["pressure_list":blood]
+        dataSyncSuccessBlock?(._Blood,dic)
 //        SEWebManager.uploadBloodRecord(dic) { (data) in
 //
 //        } fail: { (error) in
@@ -845,12 +865,12 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
     
     
     func updateBodyTemperatureData(datas: [QPSmartBodyTemperatureData]) {
-//        guard let bodyTem = datas.toJSONString() else {
-//            return
-//        }
-//
-//        let dic:[String:String] = ["temperature_list":bodyTem]
+        guard !datas.isEmpty, let bodyTem = datas.toJSONString() else {
+            return
+        }
         
+        let dic:[String:String] = ["temperature_list":bodyTem]
+        dataSyncSuccessBlock?(._Temperature,dic)
 //        SEWebManager.uploadBodyTemperatureRecord(dic) { (data) in
 //
 //        } fail: { (error) in
@@ -860,12 +880,12 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
     
     func updateSportStep(datas: [QPSportWalk]) {
         
-//        guard let steps = QPSportWalk.dataReload(datas: datas).toJSONString() else {
-//            return
-//        }
+        guard !datas.isEmpty, let steps = QPSportWalk.dataReload(datas: datas).toJSONString() else {
+            return
+        }
         
-//        let dic:[String:String] = ["walk_list":steps]
-        
+        let dic:[String:String] = ["walk_list":steps]
+        dataSyncSuccessBlock?(._Step,dic)
 //        SEWebManager.uploadSportStepsData(dic) { (data) in
 //
 //        } fail: { (error) in
@@ -876,14 +896,15 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
     
     func updateSleep(datas: [QPSleepDataDay]) {
         
-//        for item in datas {
-//            let sleepDic = item.toJSON()
+        for item in datas {
+            let sleepDic = item.toJSON()
+            dataSyncSuccessBlock?(._Sleep,sleepDic)
 //            SEWebManager.uploadSleepData(sleepDic) { (data) in
 //
 //            } fail: { (error) in
 //
 //            }
-//        }
+        }
     }
 }
 
@@ -896,7 +917,7 @@ extension UTEModelSportWalkRun {
         model.use_time = "60"
         model.calories = self.walkCalories
         model.kilometer = self.walkDistances
-//        model.date  = NSDate.date(withTimeUTEYMDMString: self.time);//self.time
+        model.date  = Date.date(withTimeUTEYMDMString: self.time);//self.time
         
         return model
     }
