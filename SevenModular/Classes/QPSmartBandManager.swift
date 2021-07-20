@@ -530,7 +530,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
 //        if (SEUserObject.sharedSEUser().target.step_goal_count != nil) {
             infoModel.sportTarget = step_goal
 //        } else {
-            infoModel.sportTarget = 6000
+//            infoModel.sportTarget = 6000
 //        }
         
         
