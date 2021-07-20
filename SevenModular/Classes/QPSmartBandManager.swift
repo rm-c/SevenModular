@@ -433,7 +433,7 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
 //        smartBandMgr.setUTELanguageSwitchDirectly(UTEDeviceLanguage.chinese)
         //CN:设置设备其他特性 忽扰模式
         //EN:Set other features of the device
-//        self.smartBandMgr.sendUTEAllTime(UTESilenceType.none, exceptStartTime: "23:00", endTime: "07:00", except: true)
+        self.smartBandMgr.sendUTEAllTime(UTESilenceType.none, exceptStartTime: "23:00", endTime: "07:00", except: true)
         
         //CN:设置其他配置，防止手环被其他手机连接了，配置与现App不一致
         //EN:Set other configurations to prevent the bracelet from being connected by other phones, and the configuration is inconsistent with the current App
