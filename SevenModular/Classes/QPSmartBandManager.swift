@@ -512,8 +512,8 @@ public class QPSmartBandManager: NSObject, UTEManagerDelegate {
         }
         
         let infoModel = UTEModelDeviceInfo.init()
-        infoModel.heigh = CGFloat(height > 67 ? height : 175)
-        infoModel.weight = CGFloat(weight > 10 ? weight : 60)
+        infoModel.heigh = CGFloat(height > 67 && height < 240 ? height : 175)
+        infoModel.weight = CGFloat(weight > 10 && weight < 300 ? weight : 60)
         infoModel.age = 30
         if let sex = UTEDeviceInfoSex.init(rawValue: sex) {
             infoModel.sex = sex
